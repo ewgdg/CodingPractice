@@ -36,6 +36,13 @@ public class Sort_List {
 
     }
 
+    public final class ss{
+
+        public void ssas(){
+            return ;
+        }
+    }
+
     public ListNode split(ListNode head, int len){
         ListNode p =head;
         while(len>0&&p!=null){

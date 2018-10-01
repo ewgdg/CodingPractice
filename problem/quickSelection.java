@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class test {
+public class quickSelection {
     public static int findKthLargest(int[] nums, int k) {
         int left = 0;
         int right = nums.length-1;

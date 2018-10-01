@@ -47,50 +47,50 @@ public class sum2 {
 //
 //
 //
-//        class Node{
+//        class Link{
 //            public int sum;
 //            public int layer;
 //            public int duplicate;
 //
-//            public Node(int sum,int layer,int dup){
+//            public Link(int sum,int layer,int dup){
 //                this.sum=sum;
 //                this.layer=layer;
 //                this.duplicate=dup;
 //            }
 //        }
-//        Stack<Node> open = new Stack<>();
+//        Stack<Link> open = new Stack<>();
 //
 //
-//        Node init = new Node(0,0,1);
+//        Link init = new Link(0,0,1);
 //        int count=0;
 //
 //
 //        open.add(init);
 //        while(!open.empty()){
-//            Node cur=open.pop();
+//            Link cur=open.pop();
 //
 //
 //            int layer = cur.layer;
 //            switch (layer){
 //                case 0:
 //                    for(Map.Entry<Integer,Integer> entry: a.entrySet()) {
-//                        open.add(new Node(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
+//                        open.add(new Link(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
 //                    }
 //                    break;
 //
 //                case 1:
 //                    for(Map.Entry<Integer,Integer> entry: b.entrySet()) {
-//                        open.add(new Node(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
+//                        open.add(new Link(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
 //                    }
 //                    break;
 //                case 2:
 //                    for(Map.Entry<Integer,Integer> entry: c.entrySet()) {
-//                        open.add(new Node(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
+//                        open.add(new Link(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
 //                    }
 //                    break;
 //                case 3:
 //                    for(Map.Entry<Integer,Integer> entry: d.entrySet()) {
-//                        open.add(new Node(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
+//                        open.add(new Link(cur.sum + entry.getKey(),layer+1, entry.getValue()*cur.duplicate));
 //                    }
 //                    break;
 //
