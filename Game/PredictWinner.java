@@ -22,6 +22,8 @@ public class PredictWinner {
         for(int size=2;size<= n; size++){
             for(int i=0;i+size-1<n;i++){
                 dp[i]= Math.max( nums[i+size-1]-dp[i], nums[i]-dp[i+1]);
+                //nums[j]-dp[i] || nums[i]-dp[i+1]
+                //nums[j] - dp[i][j-1] || nums[i] - dp[i+1][j]
             }
         }
         return dp[0];
