@@ -1,0 +1,23 @@
+
+€"squid:ClassVariableVisibilityCheck"RMake found2 a static final constant or non-public and provide accessors if needed.(÷Çû
+U
+squid:S106«"9Replace this use of System.out or System.err by a logger.(·öË¦üÿÿÿÿ
+U
+squid:S106©"9Replace this use of System.out or System.err by a logger.(œŠß±şÿÿÿÿ
+gsquid:HiddenFieldCheckb"9Rename "found1" which hides the field declared at line 7.(çÍ™Õùÿÿÿÿ8ºŒº½ÿ,
+`squid:HiddenFieldCheck>"9Rename "found2" which hides the field declared at line 8.(¸¸ÄŠÿÿÿÿÿ
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬±¤½şÿÿÿÿ
+gsquid:HiddenFieldCheckc"9Rename "found2" which hides the field declared at line 8.(­¢û³şÿÿÿÿ8ºŒº½ÿ,
+`squid:HiddenFieldCheck="9Rename "found1" which hides the field declared at line 7.(º‚š÷üÿÿÿÿ
+P
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ùûè
+U
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(Ğ•øùÿÿÿÿ
+Nsquid:S25890"7Remove this expression which always evaluates to "true"(Áİù…
+P
+squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(ŠÉ°ı
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Áôã
+U
+squid:S106¬"9Replace this use of System.out or System.err by a logger.(¹¬Ôúÿÿÿÿ
+€"squid:ClassVariableVisibilityCheck"RMake found1 a static final constant or non-public and provide accessors if needed.(®ú™ù

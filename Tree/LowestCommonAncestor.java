@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class LowestCommonAncestor {
     //follow up DAG? BST?
     //assume no dup
@@ -73,6 +76,56 @@ public class LowestCommonAncestor {
             }else{
                 return true;
             }
+        }
+        return false;
+
+    }
+
+
+    class Result{
+        boolean found1;
+        boolean found2;
+        Node ancestor;//possible ancestor, need both found1&& found2 to confirm
+        public Result(boolean found1, boolean found2, Node ancestor){
+            this.found1=found1; this.found2=found2;
+            this.ancestor=ancestor;
+        }
+    }
+
+    public Result helper(Node root, int val1 , int val2){
+        if(root==null) return new Result(false,false,null);
+        else if(root.val==val1 || root.val==val2){
+            boolean found1 = find(root,val1);
+            boolean found2 =  find(root,val2);
+            return new Result(found1,found2,root);
+        }
+
+        Result left = helper(root.left,val1,val2);
+        Result right = helper(root.left,val1,val2);
+
+        if(left.ancestor!=null && right.ancestor!=null){
+            //found the true ancestor
+            return new Result(true,true,root);
+        }
+
+        if(left.ancestor!=null) return left;
+        if(right.ancestor!=null) return right;
+
+        //NOT FOUND
+        return new Result(false,false,null);
+
+    }
+    public boolean find(Node root, int val){
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            Node cur = queue.poll();
+            if(cur!=null){
+                if(cur.val==val) return true;
+                queue.add(cur.left);
+                queue.add(cur.right);
+            }
+
         }
         return false;
 

@@ -1,0 +1,9 @@
+
+V
+squid:S106G"9Replace this use of System.out or System.err by a logger.(àˆìŸ8öŸÆµ-
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şò•üÿÿÿÿ
+V
+squid:S106F"9Replace this use of System.out or System.err by a logger.(úëª•8İ®›µ-
+osquid:S1871)"LThis branch's code block is the same as the block for the branch on line 40.(¸ñ‰Ìıÿÿÿÿ8‰ÀŒµ-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8”Òò´-
+Dsquid:S16594"!Declare "res" on a separate line.(·‘ÑŒùÿÿÿÿ8¶Ûºµ-

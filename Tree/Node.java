@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Node {
-
+//for bst
     public int val;
     public Node left;
     public Node right;
@@ -34,6 +34,64 @@ public class Node {
         return root;
     }
 
+    public static void insertIteratively(Node root, int val){
+        Node parent = root;
+        Node cur = root;
+        while(cur!=null){
+            parent=cur;
+            if(val>cur.val){
+                cur=cur.right;
+            }else{
+                cur=cur.left;
+            }
+
+        }
+
+        if(val>parent.val) parent.right=new Node(val);
+        else parent.left=new Node(val);
+
+    }
+
+    public static Node delete(Node root, int val){
+        //recursively
+
+        /* Base Case: If the tree is empty */
+        if (root == null)  return root;
+
+        if(val>root.val){
+            root.left = delete(root.left,val);
+        }else if(val<root.val){
+            root.right = delete(root.right,val);
+        }else{
+            if(root.right==null){
+                return root.left;
+            }else if(root.left==null){
+                return root.right;
+            }else {
+                Node successor = findDeleteSuccessor(root);
+                if(successor!=root.right){
+                    successor.right=root.right;
+                }
+                successor.left=root.left;
+                root=successor;
+            }
+        }
+        return root;
+
+    }
+
+    public static Node findDeleteSuccessor(Node node){
+        Node cur = node.right;
+        Node parent = null;
+        while(cur.left!=null){
+            parent=cur;
+            cur=cur.left;
+        }
+
+        if(parent!=null) parent.left=cur.right;
+        return cur;
+
+    }
     public static void print(Node root){
         Queue<Node> front = new LinkedList<>();
         front.add(root);

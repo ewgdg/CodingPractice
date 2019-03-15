@@ -1,0 +1,12 @@
+
+asquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.( ßˆQ
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¦ ™Îþÿÿÿÿ
+gsquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(Ù—“úÿÿÿÿ
+nsquid:S00117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÞŽ àÿÿÿÿÿ
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à£Çÿýÿÿÿÿ
+Ksquid:S1611>"/Remove the parentheses around the "k" parameter(¿Ñ±ãøÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à£Çÿýÿÿÿÿ
+gsquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Ksquid:S1611I"/Remove the parentheses around the "k" parameter(äîªŽýÿÿÿÿ
+N
+squid:S106~"9Replace this use of System.out or System.err by a logger.( ·¼s

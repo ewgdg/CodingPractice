@@ -11,7 +11,7 @@ public class Number_of_Matching_Subsequences {
 
 
     //All words in words and S will only consists of lowercase letters.
-    //The length of S will be in the range of [1, 50000]. S
+    //The length of S will be in the range of [1, 50000]. S  -->>  S>>>>L this is the key point
     //The length of words will be in the range of [1, 5000]. W
     //The length of words[i] will be in the range of [1, 50].L !!!!!!!!!!!!!!!!!!!!! notice the len << than S
 
@@ -52,7 +52,7 @@ public class Number_of_Matching_Subsequences {
         return j==n;
     }
 
-    //String iterator bucket method, similar to trie
+    //String iterator bucket method, similar to idea of KMP non-backward of parent string
     //O (S+W*L) very fast in case of S is large
 
     public int solution(String S, String[] words){

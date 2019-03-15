@@ -3,10 +3,10 @@ import java.util.Stack;
 public class PostOrderIterator {
 
     Stack<Node> stack;
-    Node cur;
+    Node cur,root;
 
     public PostOrderIterator(Node root){
-        cur=root;
+        cur=root; this.root=root;
         stack= new Stack<>();
     }
 

@@ -1,0 +1,20 @@
+
+Ssquid:S18542"7Remove this useless assignment to local variable "cur".(·Ú¬Ùüÿÿÿÿ
+T
+squid:S106z"9Replace this use of System.out or System.err by a logger.(ÌÔÕĞÿÿÿÿÿ
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(Øõñşÿÿÿÿ
+N
+squid:S106x"9Replace this use of System.out or System.err by a logger.(…£èS
+Rsquid:S2696,"6Make the enclosing method "static" or remove this set.(÷óˆ¾üÿÿÿÿ
+isquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(îµ¿°8àüÎ¹€-
+N
+squid:S106y"9Replace this use of System.out or System.err by a logger.(ÜÁ¸n
+Dsquid:S14812"(Remove this unused "cur" local variable.(·Ú¬Ùüÿÿÿÿ
+O
+squid:S106|"9Replace this use of System.out or System.err by a logger.(Óè¦³
+Msquid:S26967"6Make the enclosing method "static" or remove this set.(„¨ë­
+O
+squid:S106{"9Replace this use of System.out or System.err by a logger.(¹ÂË‡
+‚squid:S1319"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(ÂÅ´
+gsquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(¼æ”óüÿÿÿÿ
+]squid:S1192x"GDefine a constant instead of duplicating this literal "111001" 5 times.(…£èS

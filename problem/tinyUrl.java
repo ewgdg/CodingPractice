@@ -20,6 +20,7 @@ public class tinyUrl {
             sb.append('0');
         }
         return sb.reverse().toString();
+
     }
 
     public static void main(String[] args){

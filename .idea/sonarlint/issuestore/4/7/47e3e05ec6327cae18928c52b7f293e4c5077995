@@ -1,0 +1,30 @@
+
+Žsquid:S1319C"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(Å± ÿÿÿÿÿÿ8•† Ø€-
+Ysquid:S2696("6Make the enclosing method "static" or remove this set.(÷óˆ¾üÿÿÿÿ8•† Ø€-
+qsquid:S00117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒá°È8žýÍÙ€-
+W
+squid:S106Ç"9Replace this use of System.out or System.err by a logger.(Í†úÈ8žýÍÙ€-
+Ysquid:S2696d"6Make the enclosing method "static" or remove this set.(÷óˆ¾üÿÿÿÿ8•† Ø€-
+Žsquid:S1319$"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(®§¬âÿÿÿÿÿ8•† Ø€-
+usquid:S00117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ò©ýþÿÿÿÿ8žýÍÙ€-
+O
+squid:S106Å"9Replace this use of System.out or System.err by a logger.(ÜÁ¸n
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ýý§À8‚òŸØ€-
+\
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(‰­›”øÿÿÿÿ8žýÍÙ€-
+U
+squid:S106Æ"9Replace this use of System.out or System.err by a logger.(†èðÉþÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í‡ð‰þÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í‡ð‰þÿÿÿÿ
+vsquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏÓ÷Êûÿÿÿÿ8žýÍÙ€-
+U
+squid:S106Ä"9Replace this use of System.out or System.err by a logger.(§²ÂËøÿÿÿÿ
+nsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(æâ•ùÿÿÿÿÿ8•† Ø€-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–®ò¤8¹íÑÀ€-
+\
+squid:S106¶"9Replace this use of System.out or System.err by a logger.(‰­›”øÿÿÿÿ8žýÍÙ€-
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í‡ð‰þÿÿÿÿ
+qsquid:S00117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒá°È8žýÍÙ€-
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(µÓÓãùÿÿÿÿ
+nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(æâ•ùÿÿÿÿÿ8•† Ø€-
+Žsquid:S1319W"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(€Œºæúÿÿÿÿ8•† Ø€-

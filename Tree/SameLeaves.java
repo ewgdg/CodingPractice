@@ -89,6 +89,9 @@ public class SameLeaves {
 
         }while(a_leaf!=null && b_leaf!=null);
 
+
+//        if(a_leaf==null&&b_leaf==null) return true;
+//        else if(a_leaf==null || b_leaf==null) return false;
         return true;
 
     }

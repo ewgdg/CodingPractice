@@ -1,0 +1,36 @@
+//For Integer compare.The JVM is caching small Integer values. == only works for numbers between -128 and 127
+//http://www.owasp.org/index.php/Java_gotchas#Immutable_Objects_.2F_Wrapper_Class_Caching
+    //use equals for Integer vs Integer
+
+    You can't compare two Integer with a simple == they're objects so most of the time references won't be the same.
+
+    There is a trick, with Integer between -128 and 127, references will be the same as autoboxing uses  Integer.valueOf() which caches small integers.
+
+    So
+
+    Integer x = new Integer(10);
+    Integer y = new Integer(10);
+
+    System.out.println(x == y);
+    is guaranteed to print false. Interning of "small" autoboxed values can lead to tricky results:
+
+    Integer x = 10;
+    Integer y = 10;
+
+    System.out.println(x == y);
+    This will print true, due to the rules of boxing (JLS section 5.1.7). It's still reference equality being used, but the references genuinely are equal.
+
+    Personally I'd use:
+
+    if (x.intValue() == y.intValue())
+    or
+
+    if (x.equals(y))
+
+    The latter is slightly less efficient - there isn't an overload for Integer.equals(Integer)
+    so it will have to do execution time type checking, whereas the first uses the fact that we already know that both objects are Integers.
+
+
+    //and for <, <=, > and >= (JLS 15.20.1)
+
+      The type of each of the operands of a numerical comparison operator must be a type that is convertible (§5.1.8) to a primitive numeric type, or a compile-time error occurs. Binary numeric promotion is performed on the operands (§5.6.2). If the promoted type of the operands is int or long, then signed integer comparison is performed; if this promoted type is float or double, then floating-point comparison is performed.

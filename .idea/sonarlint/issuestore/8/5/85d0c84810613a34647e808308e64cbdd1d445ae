@@ -1,0 +1,6 @@
+
+squid:S1319"kThe type of the "map" object should be an interface such as "Map" rather than the implementation "HashMap".(ıøÈO
+O
+squid:S106V"9Replace this use of System.out or System.err by a logger.(Ó†Şì
+|"squid:ClassVariableVisibilityCheck"OMake map a static final constant or non-public and provide accessors if needed.(ıøÈO
+Fsquid:S1611D"/Remove the parentheses around the "k" parameter(ƒ·¸¥

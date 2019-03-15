@@ -6,7 +6,7 @@ public class CycleDetect_DirectedGraph {
 
 
     public boolean dfs_detectCycle(Graph graph){
-        HashSet<Graph.Vertex> visited = new HashSet<>();
+        HashSet<Graph.Vertex> visited = new HashSet<>(); //use color method better
 
         for(Graph.Vertex v : graph.vertices.values()){
             HashSet<Graph.Vertex> visiting = new HashSet<>();

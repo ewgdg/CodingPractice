@@ -1,0 +1,8 @@
+ //T(n) = 4*T(n/2) + 1
+    //master theorem   aT(n/b) + f(n)  if dominating factor is n^(logb(a))  >> f(n)  then complexity T(n) = n^c where c = logb(a)
+    //if f(n) =   (log(n))^k  *  n^c then T(n) = (log(n))^k+1 * n^c
+    //else if af(n/b) <<< kf(n)   &&   f(n) >>> n^c  then T = f(n)
+
+    // depth = log2(n)
+    //branch factor = 4
+    // total nodes = 4^(log2(n))  , let n = 4^log4(n) --> then total nodes = n^(log2(4)) = n^2 =T(n)

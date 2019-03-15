@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -66,9 +67,41 @@ public class PartitionIntoDisjoint {
 
     }
 
+    //similar with simple min monotone
+    public static int solution2(int[] nums){
+        int max  = nums[0];
+        Deque<Integer> monotone = new ArrayDeque<>();//store index
+
+        //build monotone
+        for(int i=0;i<nums.length;i++){
+            int cur = nums[i];
+            while(!monotone.isEmpty() && nums[monotone.peekLast()]>cur ){
+                monotone.removeLast();
+            }
+            monotone.add(i);
+        }
+
+        for(int i =0;i<nums.length-1;i++){
+            max = Math.max(max, nums[i]);
+            if(i==monotone.peekFirst()){
+                monotone.removeFirst();
+            }
+            int min = nums[monotone.peekFirst()];
+            if(min>=max){
+                System.out.println(max);
+                System.out.println(min);
+                return i+1;
+            }
+
+        }
+        return -1;
+
+    }
 
     public static void main(String[] args){
-        System.out.println(partitionDisjoint(new int[]{6,0,8,30,37,6,75,98,39,90,63,74,52,92,64}));
+        System.out.println(partitionDisjoint(new int[]{6,1,8,30,37,6,75,98,39,90,63,74,52,92,64}));
+        System.out.println("start2");
+        System.out.println(solution2(new int[]{6,1,8,30,37,6,75,98,39,90,63,74,52,92,64}));
 
     }
 }

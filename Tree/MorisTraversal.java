@@ -58,4 +58,24 @@ public class MorisTraversal {
         }
 
     }
+    public void postorderMorrisTraversal(Node root) {
+        Node cur = root;
+        while (cur != null) {
+            if (cur.left == null) {
+                cur = cur.right;
+            } else {
+                Node predecessor = findPredecessor(cur);
+                if (predecessor.right == null) {
+                    predecessor.right = cur;
+                    cur = cur.left;
+                } else {
+                    //printReverse(cur.left,predecessor);//print reversely from cur.left to pred
+                    predecessor.right = null;
+                    cur = cur.right;
+
+                }
+
+            }
+        }
+    }
 }

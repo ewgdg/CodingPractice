@@ -10,6 +10,8 @@ import java.util.List;
 //Explanation:
 //We can extend "e" and "o" in the word "hello" to get "heeellooo".
 //We can't extend "helo" to get "heeellooo" because the group "ll" is not extended.
+// Formally, we are allowed to repeatedly choose a group (as defined above) of characters c,
+// and add some number of the same character c to it so that the length of the group is 3 or more.
 
 public class Expressive_Words {
     public int expressiveWords(String S, String[] words) {

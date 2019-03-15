@@ -1,11 +1,0 @@
-
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(èðŸ¾
-Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
-‡squid:S1319"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(Šß´Ìûÿÿÿÿ
-rsquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "res".(Ü¶Ûÿ
-nsquid:UselessImportCheck">Remove this unused import 'org.slf4j.impl.StaticLoggerBinder'.(ÞÚÞéùÿÿÿÿ8â‰”©Ö,
-T
-squid:S106n"9Replace this use of System.out or System.err by a logger.(òí¸ƒùÿÿÿÿ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¸Ý—Öúÿÿÿÿ
-_squid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜8ÙýÎ©Ö,
-‚squid:S1319;"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(Ú¿±ª

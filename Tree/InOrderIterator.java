@@ -51,7 +51,7 @@ public class InOrderIterator {
 
     public static void main(String[] args){
         InOrderIterator iterator = new InOrderIterator(Node.bst);
-//        Node cur =null;
+//        Result cur =null;
         while( iterator.hasNext() ){
             System.out.println(iterator.next().val);
         }

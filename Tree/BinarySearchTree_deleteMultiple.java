@@ -57,7 +57,7 @@ public class BinarySearchTree_deleteMultiple {
 //            // Delete the inorder successor
 //            root.right = deleteRec(root.right, root.key);
 
-            Node successor = deleteMin(root.right,null);
+            Node successor = deleteMin(root.right);//or find then call delete(successor);//same complexity but longer time//note delete node instead of val to prevent wrong node
             //replace cur node with succ
             successor.left = root.left;
             if(successor != root.right){
@@ -127,6 +127,7 @@ public class BinarySearchTree_deleteMultiple {
         root = deleteMultiple_helper(root,lo,hi);
 
     }
+//    complexity to O(nlogn) , keep finding successors
     Node deleteMultiple_helper(Node root, int lo, int hi){
         if(root==null) return null;
 
@@ -138,7 +139,7 @@ public class BinarySearchTree_deleteMultiple {
             if(root.right==null) return root.left;
             else if(root.left==null) return root.right;
             else{
-                Node successor = deleteMin(root.right,null);
+                Node successor = deleteMin(root.right);
                 //replace cur node with succ
                 successor.left = root.left;
                 if(successor != root.right){
@@ -185,7 +186,7 @@ public class BinarySearchTree_deleteMultiple {
         root.left= deleteMultiple_helper2(root.left,lo,hi,min_left);
         root.right = deleteMultiple_helper2(root.right,lo,hi,min_right);
 
-        if(min_left[0] != null && min_left[1]==null) min_left[1] =root;
+        if(min_left[0] != null && min_left[1]==null) min_left[1] =root;//could be commented
         if(min_right[0] != null && min_right[1]==null) min_right[1] =root;
 
         if(root.left==null){
@@ -194,6 +195,7 @@ public class BinarySearchTree_deleteMultiple {
         }
         else{
             min[0] = min_left[0];//min node
+            if(min_left[1]==null) min_left[1]=root;//set parent
             min[1] = min_left[1];//parent of min node
         }
 
@@ -216,20 +218,21 @@ public class BinarySearchTree_deleteMultiple {
 
         return root;
     }
-    Node deleteMin(Node root,Node parent){
-
-        while(root.left!=null){
-            parent = root;
-            root=root.left;
+    Node deleteMin(Node root){
+        Node parent =null;
+        Node cur = root;
+        while(cur.left!=null){
+            parent = cur;
+            cur=cur.left;
         }
         //remove min node
         if(parent!=null)
-            parent.left = root.right;
-        return root;
+            parent.left = cur.right;
+        return cur;
     }
 
 
-    // Driver Program to quickSelection above functions
+    // Driver Program to quickSelection.quickSelection above functions
     public static void main(String[] args)
     {
         BinarySearchTree_deleteMultiple tree = new BinarySearchTree_deleteMultiple();

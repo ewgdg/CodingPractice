@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class TopKfreq {
-    //min heap maintain k top elem so far
-    //quick selection
+    //min heap maintain k top elem so far, nlogk
+    //quick selection O n
 
 
     public List<Integer> solve(int[] nums,int k){
         HashMap<Integer, Node> counter = new HashMap<>();
-        for(int num:nums){
+        for(int num:nums){ //need node instead of count bc we need to sort count to find val, but count could be dup(so hashmap doesnt work)
             Node cur = counter.computeIfAbsent(num, (key)->new Node(key) );
             cur.count++;
         }
@@ -25,15 +25,25 @@ public class TopKfreq {
     public void quickSelection(List<Node> list, int k, int lo, int hi){
 
 
-
-        int index = partition(list,lo,hi);
-
-        if(index==k-1){
-            return;
-        }else if(index>k-1){
-            quickSelection(list,k,lo,index-1);
-        }else if(index<k-1){
-            quickSelection(list,k,index+1,hi);
+//recursive method
+//        int index = partition(list,lo,hi);
+//        if(index==k-1){
+//            return;
+//        }else if(index>k-1){
+//            quickSelection(list,k,lo,index-1);
+//        }else if(index<k-1){
+//            quickSelection(list,k,index+1,hi);
+//        }
+        while(lo<=hi) {
+            int index = partition(list, lo, hi);
+            if (index == k - 1) {
+                //got exact k elem
+                return;
+            } else if (index > k - 1) {
+                hi = index - 1;
+            } else if (index < k - 1) {
+                lo = index + 1;
+            }
         }
 
 

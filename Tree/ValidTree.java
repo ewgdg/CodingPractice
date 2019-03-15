@@ -4,7 +4,12 @@ public class ValidTree {
 
     public boolean validTree(int n, int[][] edges) {
         //valid if we can traverse the whole tree without cycle from any point
-        //disjoint set to see if they finally join as one group
+        //To tell whether a graph is a valid tree, we have to:
+        //
+        //Make sure there is no cycle in the graph - this has to be a none-cyclic graph; //dfs
+        //Make sure every node is reached - this has to be a connected graph;//edge==n-1 or check all nodes are visited after dfs any node
+
+        //disjoint set to see if they finally join as one group // or dfs any node for acyclic
         DisjointSet set = new DisjointSet();
 
         for(int i=0;i<n;i++){
@@ -18,6 +23,7 @@ public class ValidTree {
         }
 
         return set.count==1; //or edges.length==n-1 , equivalent
+        //After we make sure there is node cycle in the graph, we simple test if there is enough edges to make this graph connected.
 
     }
 

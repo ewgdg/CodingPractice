@@ -1,0 +1,9 @@
+
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í¦ÄÒ
+gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(Á¦äåýÿÿÿÿ
+;squid:S1659D"Declare "j" on a separate line.(¦¢Éëùÿÿÿÿ
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŒØ—ºùÿÿÿÿ
+psquid:S1210]"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(’ö¨™
+gsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(ûçºÐÿÿÿÿÿ
+~"squid:ClassVariableVisibilityCheckW"PMake node a static final constant or non-public and provide accessors if needed.(Ù‚é÷
+gsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ÌæÏ»üÿÿÿÿ

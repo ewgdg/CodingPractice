@@ -32,15 +32,15 @@ public class Guess_Number_Higher_or_Lower_II {
     }
 
     public  static int tabulation_solution(int n){
-        int[][] dp = new int[n+1][n+1];
+        int[][] dp = new int[n+2][n+1];
 
 
-        for(int size=1;size<n;size++){//size start from 1 bc if i==j then dp should return 0
-            for(int i=1;i+size<=n;i++){
-                int j=i+size;
+        for(int size=2;size<=n;size++){//size start from 2 bc if i==j then dp should return 0
+            for(int i=1;i+size-1<=n;i++){
+                int j=i+size-1;
                 int res =Integer.MAX_VALUE;
-                for(int x=i;x<j;x++){ //dont need to pick x=j , otherwise need to test bound x+1<j
-                    int worst_branch  = x + Math.max(dp[i][x-1],dp[x+1][j]);
+                for(int x=i;x<=j;x++){ //dont need to pick x=j , otherwise need to test bound x+1<j //or set dp[n+2] for boundary case
+                    int worst_branch  = x + Math.max(dp[i][x-1],dp[x+1][j]);//at larger size iter, all smaller range has been calculated
                     res = Math.min(res,worst_branch);
                 }
                 dp[i][j]=res;
@@ -49,12 +49,30 @@ public class Guess_Number_Higher_or_Lower_II {
         }
         return dp[1][n];
     }
+    public  static int tabulation2(int n){
+        int[][] dp = new int[n+1][n+2];
 
+
+        for(int size=2;size<=n;size++){//size start from 2 bc if i==j then dp should return 0
+            for(int i=1;i+size-1<=n;i++){
+                int j=i+size-1;
+                int res =Integer.MAX_VALUE;
+                for(int x=i;x<=j;x++){ //dont need to pick x=j , otherwise need to test bound x+1<j//or set dp[n+2] for boundary case
+                    int worst_branch  = x + Math.max(dp[x-i][i],dp[j-x][x+1]);//at larger size iter, all smaller range has been calculated
+                    res = Math.min(res,worst_branch);
+                }
+                dp[size][i]=res;
+
+            }
+        }
+        return dp[n][1];
+    }
 
 
     public static void main(String[] args){
-        int n = 400;
+        int n = 325;
         System.out.println(tabulation_solution(n));
         System.out.println(getMoneyAmount(n));
+        System.out.println(tabulation2(n));
     }
 }

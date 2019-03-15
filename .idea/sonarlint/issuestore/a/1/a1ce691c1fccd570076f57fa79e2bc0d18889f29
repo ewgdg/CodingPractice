@@ -1,0 +1,26 @@
+
+gsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(¨ñ×Äþÿÿÿÿ
+Csquid:S1481",Remove this unused "visited" local variable.(™Žé
+bsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(§øú³
+Ssquid:S1854"<Remove this useless assignment to local variable "removals".(¿¼çÀ
+gsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(ÍéÑùÿÿÿÿ
+gsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+†squid:S1319T"pThe type of the "visiting" object should be an interface such as "Set" rather than the implementation "HashSet".(†´‘<
+ƒsquid:S1319x"mThe type of the "color" object should be an interface such as "Map" rather than the implementation "HashMap".(Žòû
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ºÍºŽ
+bsquid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(ãƒå¾
+Esquid:S1125X")Remove the literal "false" boolean value.(„³Êþÿÿÿÿ
+Ysquid:S1854"BRemove this useless assignment to local variable "reversed_graph".(ŽÆÈØ
+bsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(ªëØª
+Jsquid:S1481"3Remove this unused "reversed_graph" local variable.(ŽÆÈØ
+bsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(ðŠ‘ã
+bsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(ãƒå¾
+bsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(ãƒå¾
+Rsquid:S1854";Remove this useless assignment to local variable "visited".(™Žé
+…squid:S1319T"oThe type of the "visited" object should be an interface such as "Map" rather than the implementation "HashMap".(†´‘<
+]squid:S1126X"AReplace this if-then-else statement by a single return statement.(„³Êþÿÿÿÿ
+Dsquid:S1481"-Remove this unused "removals" local variable.(¿¼çÀ
+bsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(›òöÌ
+isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÆÈØ
+gsquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(ûâ©Óùÿÿÿÿ

@@ -221,7 +221,7 @@ public class BinarySearchTree {
     }
 
 
-    // Driver Program to quickSelection above functions
+    // Driver Program to quickSelection.quickSelection above functions
     public static void main(String[] args)
     {
         BinarySearchTree tree = new BinarySearchTree();

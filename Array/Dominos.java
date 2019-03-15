@@ -5,6 +5,7 @@ public class Dominos {
 
     //method1 simulation
     //O n time , O n space
+    //bfs with hashSet as open for fast check existence
     public String pushDominoes(String dominoes) {
         HashSet<Integer> level_open  = new HashSet<>();//to fast check if node exist in a level open
         char[] res = dominoes.toCharArray();
@@ -34,7 +35,7 @@ public class Dominos {
                     continue;
                 }
 
-                if(next_level.contains(next)){ // it is vertical
+                if(next_level.contains(next)){ // it is vertical， met second time 2 forces canceled out
                     next_level.remove(next);
                     res[next]  =  '.';
                 }else if(!visited.contains(next)){
@@ -79,7 +80,7 @@ public class Dominos {
             if(cur=='L'){
                 if(prev=='L'){
                     for(int j = prevIdx+1; j<i; j++){
-                        res[i]='L';
+                        res[j]='L';
                     }
                 }else if(prev=='R'){
                     int lo=prevIdx+1;
@@ -97,7 +98,7 @@ public class Dominos {
             }else if(cur=='R'){
                 if(prev=='R'){
                     for(int j = prevIdx+1; j<i; j++){
-                        res[i]='R';
+                        res[j]='R';
                     }
                 }
                 //update prev!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! only when L or R

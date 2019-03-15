@@ -1,0 +1,7 @@
+
+nsquid:S3776	"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(°îþÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³˜²§ûÿÿÿÿ
+hsquid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÎÈ
+Usquid:S1155">Use isEmpty() to check whether the collection is empty or not.(µßËœ
+nsquid:S3776B"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¸ïó­üÿÿÿÿ

@@ -1,0 +1,21 @@
+
+nsquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´éÆùÿÿÿÿ
+Qsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX
+ssquid:S00115‘"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(î´àÆ
+ssquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âòŒÀÿÿÿÿÿ8²ãŒ®-
+O
+squid:S106–"9Replace this use of System.out or System.err by a logger.(¾Á¿+
+\
+squid:S106—"9Replace this use of System.out or System.err by a logger.(ãÉúşÿÿÿÿ8è¾¬-
+Isquid:S1481j"+Remove this unused "offset" local variable.(Á®±‘8İß—®-
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëÃ¢
+jsquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(»ÌÑş8£Ê¥¬-
+ksquid:ModifiersOrderCheck‘"EReorder the modifiers to comply with the Java Language Specification.(î´àÆ
+P
+squid:S106”"9Replace this use of System.out or System.err by a logger.(…æÖş
+nsquid:CommentedOutCodeLineq"<This block of commented-out lines of code should be removed.(Ïì ğüÿÿÿÿ8ßà‘®-
+ksquid:S00100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜŒ–ıÿÿÿÿ
+ksquid:S00100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ®áÉûÿÿÿÿ
+isquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(Çîİ¡8„¢»®-
+‡squid:S13192"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(´éÆùÿÿÿÿ
+Xsquid:S1854j":Remove this useless assignment to local variable "offset".(Á®±‘8Ôõª®-

@@ -39,4 +39,20 @@ public class randBasdOnWeight {
         // assert(prefixSum[lo]>=x && (lo-1 <0 || prefixSum[lo-1] < x) );
         return lo;
     }
+    public int binarySearch2(int x){
+        int lo =0;
+        int hi = n-1;
+        while(lo<=hi){
+            int mid = lo + (hi-lo)/2;
+            if(prefixSum[mid]<x){
+                lo=mid+1;
+            }else if(prefixSum[mid]==x){ //exclusive prefixSUm
+                lo=mid+1;
+            }else{
+                hi= mid-1;
+            }
+        }
+        return lo;//want the find the larger val than target
+
+    }
 }

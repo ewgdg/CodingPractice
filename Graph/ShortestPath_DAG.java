@@ -5,7 +5,7 @@ public class ShortestPath_DAG {
     //relax each dist
 
     public static HashMap<Integer,Integer> solution(Graph graph,int src){// or a few src
-        TopologialSort sorter = new TopologialSort();
+        TopologicalSort sorter = new TopologicalSort();
         Stack<Integer> stack  = sorter.sort_dfs(graph);
 
         HashMap<Integer,Integer> predecessors= new HashMap<>();

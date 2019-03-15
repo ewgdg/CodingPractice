@@ -9,7 +9,8 @@ public class UniformCostSearch {
 
     class State implements Comparable<State>{
         int cost;
-        int id;
+        int id; //or store Node node(with pos)
+        int pid; //parent id/Node for predecessor , another way is to store Operation/State parent(mem costly like linkedlist).
         public State(int id, int cost){
             this.cost=cost;
             this.id=id;
@@ -24,22 +25,31 @@ public class UniformCostSearch {
         PriorityQueue<State> open = new PriorityQueue<>();
         HashSet<Integer> visited = new HashSet<>();
 
-        visited.add(src);
+        visited.add(src);//wrong!! bc we check visited after poll , dont need to add here.
         open.add(new State(src,0));//can have multiple src to find out the shortest src
 
         int res =-1;
         while(!open.isEmpty()){
             State cur = open.poll();
+
+            //check visited here !!. //check visited after poll bc we need to sort it first
+            //if(visited ) continue;
+            // visited.add(cur);
+            // predecessor.put(cur.id,cur.pid);
+
             if(cur.id == dst){
                 //goal
                 res= cur.cost;
                 break;
             }
+
+
+
             Graph.Vertex v = graph.makeVertex(cur.id);
             for(Graph.Vertex child: v.getChildren()){
-                if(!visited.contains(child.id)){
+                if(!visited.contains(child.id)){ //wrong!!!, we cannot do visited here , bc it is not sorted yet, we might discard a state that is shorter than those in the front/open.
                     State next =new State(child.id,cur.cost+v.getWeight(child));
-                    predecessor.put(child.id,cur.id);
+                    predecessor.put(child.id,cur.id);//wrong, need to sort first
                     visited.add(child.id);
                     open.add(next);
                 }
@@ -47,9 +57,9 @@ public class UniformCostSearch {
 
         }
 
-        Stack<Integer> path = new Stack<>();
+        Stack<Integer> path = new Stack<>(); //use Deque add to front, then return new ArrayList<>(deque);
         int cur = dst;
-        while(cur!=src){
+        while(cur!=src){//or cur!=null , cur=predecessors.getOrDefault(cur,null)
             path.add(cur);
             cur  = predecessor.get(cur);
         }
