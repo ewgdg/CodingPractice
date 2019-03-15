@@ -1,0 +1,8 @@
+
+{
+squid:S135<"YReduce the total number of break and continue statements in this loop to use at most one.(ØÕ—©ıÿÿÿÿ8Ã½Š †-
+V
+squid:S106S"9Replace this use of System.out or System.err by a logger.(„Æì8Ã½Š †-
+wsquid:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼šú›8ËÎŸ†-
+[
+squid:S106T"9Replace this use of System.out or System.err by a logger.(òŞ³ˆıÿÿÿÿ8áæ †-

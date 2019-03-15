@@ -1,10 +1,13 @@
 public class largestBst {
 
+    //333. Largest BST Subtree
+    //Given a binary tree, find the largest subtree which is a Binary Search Tree (BST), where largest means subtree with largest number of nodes in it.
+
     public int solution(Node root){
         return subBST(root).size;
     }
 
-    class Range{
+    class Range{//class Result
         public Integer min;
         public Integer max;
         public int size;
@@ -19,21 +22,21 @@ public class largestBst {
 
     public Range subBST(Node root){
         if(root==null){//terminating at leaf not null
-            return null;
+            return new Range(null,null,0,true);
         }
 
         Range left = subBST(root.left);
         Range right = subBST(root.right);
 
-        int left_size = left==null?0:left.size;
-        int right_size = right==null?0:right.size;
+//        int left_size = left==null?0:left.size;
+//        int right_size = right==null?0:right.size;
 
 
-        if( (left==null|| (left.isBST  && root.val >left.max)   )  && (right==null|| (right.isBST  && root.val<right.min ))  ){
+        if(!left.isBST||!right.isBST||(left.max!=null&&root.val<=left.max) || (right.min!=null&& root.val>=right.min)){
+            return new Range(0,0,Math.max(left.size,right.size),false);//not a bst subtree
 
-            return new Range(left==null?root.val:left.min,right==null?root.val:right.max,left_size+right_size+1,true);
         }else{
-            return new Range(0,0,Math.max(left_size,right_size),false);
+            return new Range(left.min==null?root.val:left.min,right.max==null?root.val:right.max,left.size+right.size+1,true);
         }
 
     }

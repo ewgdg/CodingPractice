@@ -6,6 +6,8 @@ public class OnesandZeroes {
     //Output: 4
     //
     //Explanation: This are totally 4 strings can be formed by the using of 5 0s and 3 1s, which are “10,”0001”,”1”,”0”
+    // the resource is consumed without resuming after form one string
+    //using final state method
 
 
     public int findMaxForm(String[] strs, int m, int n) {
@@ -31,10 +33,10 @@ public class OnesandZeroes {
             return 0;
         }
         if(m<0 || n<0){
-            return 0;
+            return 0; //or return -1 and remove the if cond  if(m>=num[0] && n>=num[1])
         }
-        if(m==0 && n==0){
-            return 0;
+        if(m==0 && n==0){//terminate only if all resources consumed
+            return 0; //or return 1, and remove the sub+1 at parent call
         }
 
         String key = index+":"+m+":"+n;
@@ -85,13 +87,13 @@ public class OnesandZeroes {
         }
 
         int[][] dp = new int[m+1][n+1];
-        dp[0][0]=0;
+        dp[0][0]=0; //or =1 but remove the +1
         //init
 
 
         for(int size=1; size<=strs.length; size++){
             int index = size-1;
-            int[][] nextdp = new int[m+1][n+1];
+            int[][] nextdp = new int[m+1][n+1];//to save space for nextdp we can iterate from i = m, j = n i-- j-- to avoid reuse of modified
             int[] nums =counter[index];
             for(int i=0;i<=m;i++){
                 for(int j=0;j<=n;j++){

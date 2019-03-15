@@ -2,7 +2,7 @@ import java.util.*;
 
 public class DisjointSet {
     class Node{
-        int data;
+        int data;//need this bc after we find parent we might need to use the data
         Node parent;
         int rank;
         public Node(int data){
@@ -23,16 +23,16 @@ public class DisjointSet {
     public Node makeSet(int data){
         if(!map.containsKey(data)){
             count++;
-            return map.put(data,new Node(data));
+            map.put(data,new Node(data));
         }
         return map.get(data);
     }
 
-    public int findParent(int data){
+    public int findParent(int data){//dont need this
         if(!map.containsKey(data)) return -1;
         return findParent(map.get(data)).data;
     }
-    public Node findParent(Node node){
+    public Node findParent(Node node){//should name it find , it find which group it belongs to
         if(node.parent!=node){
             node.parent = findParent(node.parent);
         }

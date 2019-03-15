@@ -1,0 +1,20 @@
+
+\
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(áøÿÿÿÿ8‘”¦‚-
+Osquid:S1444",Make this "public static colors" field final(Ê‹Îãøÿÿÿÿ8‘”¦‚-
+Dsquid:S1168b"&Return an empty array instead of null.(ûÛİõ8‘”¦‚-
+@squid:S2386"Make this member "protected".(Ê‹Îãøÿÿÿÿ8‘”¦‚-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÛÎõÒ8‘”¦‚-
+;squid:S2119p"Save and re-use this "Random".(¼İÅf8‘”¦‚-
+Œ"squid:ClassVariableVisibilityCheck"RMake colors a static final constant or non-public and provide accessors if needed.(Ê‹Îãøÿÿÿÿ8‘”¦‚-
+nsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(­åê¸şÿÿÿÿ8‘”¦‚-
+nsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.( ±É½ûÿÿÿÿ8‘”¦‚-
+‘squid:S1319e"nThe type of the "pruned" object should be an interface such as "Map" rather than the implementation "HashMap".(À•‚¥ÿÿÿÿÿ8‘”¦‚-
+dsquid:S1126"AReplace this if-then-else statement by a single return statement.(ˆá‹ôÿÿÿÿÿ8‘”¦‚-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‡Â¶ÿÿÿÿÿ8‘”¦‚-
+Ksquid:S1172"(Remove this unused method parameter "n".(Üóµ¸ùÿÿÿÿ8‘”¦‚-
+Œsquid:S1319'"nThe type of the "pruned" object should be an interface such as "Map" rather than the implementation "HashMap".(áëÚ8‘”¦‚-
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¸ŒìŠ8‘”¦‚-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º¢“—8‘”¦‚-
+msquid:S00100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áëÚ8‘”¦‚-
+usquid:S00117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïåßèúÿÿÿÿ8‘”¦‚-

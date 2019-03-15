@@ -1,0 +1,27 @@
+
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°•¬ã
+gsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(Ã¢Ùøÿÿÿÿ
+O
+squid:S106C"9Replace this use of System.out or System.err by a logger.(—Ûæ‚
+T
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(¤ß½Âûÿÿÿÿ
+T
+squid:S106S"9Replace this use of System.out or System.err by a logger.(®©ôöüÿÿÿÿ
+O
+squid:S106U"9Replace this use of System.out or System.err by a logger.(÷†ÎÆ
+O
+squid:S106V"9Replace this use of System.out or System.err by a logger.(˜¹¦¬
+T
+squid:S106X"9Replace this use of System.out or System.err by a logger.(‘¿±Æûÿÿÿÿ
+Dsquid:S1481"-Remove this unused "slope_ad" local variable.(ÐâÁõ
+Dsquid:S1481"-Remove this unused "slope_ab" local variable.(íÙì®
+=squid:S1481+"&Remove this unused "c" local variable.(òŒ†­
+isquid:S37765"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ú•ÞÜ
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¨é¬üÿÿÿÿ
+Ssquid:S1854"<Remove this useless assignment to local variable "slope_ab".(íÙì®
+Ssquid:S1854"<Remove this useless assignment to local variable "slope_ad".(ÐâÁõ
+Lsquid:S1854+"5Remove this useless assignment to local variable "c".(òŒ†­
+isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐâÁõ
+isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÙì®
+nsquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ­Ù´øÿÿÿÿ
+isquid:S00117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ôÆþ

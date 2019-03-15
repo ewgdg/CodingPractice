@@ -35,7 +35,7 @@ public class SameBTree {
     public boolean dfs(Integer id,HashMap<Integer,HashMap<Integer,Integer>> grapha,HashMap<Integer,HashMap<Integer,Integer>> graphb, HashSet<Integer> visited ){
 
         if(visited.contains(id)){
-            return true;
+            return true;//true here
         }
 
         visited.add(id);

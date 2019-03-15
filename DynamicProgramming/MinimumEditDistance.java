@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class MinimumEditDistance {
@@ -54,6 +55,8 @@ public class MinimumEditDistance {
         int m = a.length();
         int n = b.length();
         int[][] dp =new int[m+1][n+1];
+        //bc the base case starts from index -1, set offset to 1
+        int offset = 1;
 
         //init
         for(int i=1;i<m+1;i++){
@@ -63,9 +66,9 @@ public class MinimumEditDistance {
             dp[0][i]=i;
         }
 
-        for(int i=1;i<m+1;i++){ //can do space compression
+        for(int i=1;i<m+1;i++){ //can do space compression to keep one row only//imagine the table and the flow of index
             for(int j=1;j<n+1;j++){
-                if(a.charAt(i-1)==b.charAt(j-1)){
+                if(a.charAt(i-offset)==b.charAt(j-offset)){
                     dp[i][j]= dp[i-1][j-1];
                 }else{
                     dp[i][j]= Math.min(dp[i-1][j-1]+1,dp[i][j-1]+1);//replace or delete char at j
@@ -80,12 +83,51 @@ public class MinimumEditDistance {
 
 
     }
+
+    public static int tabulation_spaceCompression(String a, String b){
+        int m = a.length();
+        int n = b.length();
+        int offset  = 1;
+        int[] dp = new int[n+offset];
+//        int[] prev = dp ;// wrong, point to same obj
+//        int[] prev = new int[n+offset];
+        //init prev;
+        for(int j=0;j<=n;j++){
+            dp[j]=j;
+        }
+
+        for(int i = offset; i<m+offset;i++){
+            int index1 = i-offset;
+//            dp[0] = index1+1;
+            int[] next = new int[n+1];//use next to avoid copy of array
+            next[0] = index1+1;
+            for(int j=offset; j<(n+offset);j++){
+                int index2 = j-offset;
+                if(a.charAt(index1)==b.charAt(index2)){
+                    next[j] = dp[j-1];
+                }else{
+                    next[j]= Math.min(next[j-1]+1,dp[j]+1);
+                    next[j] = Math.min(next[j],dp[j-1]+1);
+                }
+
+
+            }
+            //prev = dp; //wrong!!!!!!!!!!!!!!!!! , point to the same obj
+//            prev=Arrays.copyOf(dp,dp.length);
+            //or to avoid copy use next[]
+            dp=next;
+
+        }
+        return dp[n];
+
+    }
     public static void main(String[] args){
         String a = "abcd";
         String b = "abac";
 
         System.out.println(solution(a,b));
         System.out.println(dp_solution(a,b));
+        System.out.println(tabulation_spaceCompression(a,b));
         System.out.println( call);
     }
 }

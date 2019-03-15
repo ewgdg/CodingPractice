@@ -23,7 +23,7 @@ public class snake_and_ladder {
 
                 for(int j=1;j<=6;j++){
                     int next = cur+j;
-                    //notice !!!  that we cannot !!!!check!!!! visited or add visited here, because we might jump to new place
+                    //notice !!!  that we cannot !!!!check!!!! visited or add visited here, because we might jump to new place once
                     //this 'next' might be a visited node , but the jumped val can be not visited
                     //we follow such a rule for jumped game , checked jumped node and seen jumped node only
                     if(next>goal) continue;

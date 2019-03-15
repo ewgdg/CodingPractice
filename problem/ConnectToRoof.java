@@ -27,7 +27,7 @@ public class ConnectToRoof {
         mat[i][j] =  0;
 
         for(int i1=0, j1=0;j1<n;j1++){
-            dfs(mat,i1,j1,m,n);
+            dfs(mat,i1,j1,m,n);//first row dfs
         }
 
 

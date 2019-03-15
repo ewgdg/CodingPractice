@@ -14,7 +14,7 @@ public class MyCalendarII {
     Node root;
 
     public MyCalendarII(){
-        root= null;//new Node(0,0);//dummy
+        root= null;//new Result(0,0);//dummy
     }
     public boolean book(int start, int end) {
         if (!insertable(root, start, end)) {

@@ -1,0 +1,26 @@
+
+9squid:S1643È"Use a StringBuilder instead.(¹ËÛöıÿÿÿÿ
+Gsquid:S1444Ÿ"0Make this "public static operations" field final(ìû«
+6squid:S2097"Add a type test to this method.(¬‰¼¯
+Œsquid:S1319"uThe type of the "term_coef_map" object should be an interface such as "Map" rather than the implementation "HashMap".(èµø
+‰squid:S1319Ÿ"rThe type of the "operations" object should be an interface such as "Map" rather than the implementation "HashMap".(ìû«
+ˆsquid:S1319ª"kThe type of the "map" object should be an interface such as "Map" rather than the implementation "HashMap".(ºÅ¡ôşÿÿÿÿ
+U
+squid:S106ÿ"9Replace this use of System.out or System.err by a logger.(ïşÿÿÿÿ
+~"squid:ClassVariableVisibilityCheck"PMake vars a static final constant or non-public and provide accessors if needed.(ß—¼Â
+‡"squid:ClassVariableVisibilityCheck"YMake term_coef_map a static final constant or non-public and provide accessors if needed.(èµø
+„"squid:ClassVariableVisibilityCheckŸ"VMake operations a static final constant or non-public and provide accessors if needed.(ìû«
+ƒ"squid:ClassVariableVisibilityCheckª"OMake map a static final constant or non-public and provide accessors if needed.(ºÅ¡ôşÿÿÿÿ
+osquid:S3776­"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(é±‡şÿÿÿÿ
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·½Ş–
+jsquid:S00101e"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§õ¬øşÿÿÿÿ
+esquid:S00101s"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ü”ˆ
+fsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(çÆÜ
+ksquid:S00101–"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(èüüóÿÿÿÿÿ
+Ysquid:S2259"BA "NullPointerException" could be thrown; "that" is nullable here.(ÌĞİ
+jsquid:S1602L"SRemove useless curly braces around statement and then remove useless return keyword(¦Ò‰İ
+4squid:S2386Ÿ"Make this member "protected".(ìû«
+psquid:S00116"XRename this field "term_coef_map" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èµø
+hsquid:S1149°"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ë÷ü‘
+msquid:S1149±"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Î¯Öûÿÿÿÿ
+msquid:S1149²"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(õê¥ƒùÿÿÿÿ

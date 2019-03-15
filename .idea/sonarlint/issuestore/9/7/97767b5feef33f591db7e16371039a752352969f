@@ -1,0 +1,17 @@
+
+‚squid:S1319"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(‘…ƒ¹
+nsquid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(ýŸ–ùÿÿÿÿÿ8«‘‘¾€-
+W
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(®¸†»8“­¨½€-
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(´íŸ’ùÿÿÿÿ
+}squid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "remaining".(Ë•Ø”úÿÿÿÿ
+nsquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(­Ü­Øùÿÿÿÿ8´°„¾€-
+nsquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(Þâ×üþÿÿÿÿ8åŠ¾€-
+U
+squid:S106€"9Replace this use of System.out or System.err by a logger.(þã¶”þÿÿÿÿ
+}squid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "remaining".(°‰…¬úÿÿÿÿ
+msquid:S00100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ïàæ8½ðï»€-
+fsquid:S001006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÖ…æ
+O
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(ÜÁ¸n

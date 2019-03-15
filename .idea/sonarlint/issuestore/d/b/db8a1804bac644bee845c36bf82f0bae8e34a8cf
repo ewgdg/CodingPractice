@@ -1,0 +1,13 @@
+
+bsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(‘Çò½
+gsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ÉÎˆéøÿÿÿÿ
+‹squid:S1319"oThe type of the "visited" object should be an interface such as "Set" rather than the implementation "HashSet".(éßžžøÿÿÿÿ
+T
+squid:S106X"9Replace this use of System.out or System.err by a logger.(ØÏ¢—ýÿÿÿÿ
+O
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(Í¤Ò·
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹‘¨ñ
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å®­¤
+gsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¹‘¨ñ
+lsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›þöýÿÿÿÿ
+lsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(éßžžøÿÿÿÿ

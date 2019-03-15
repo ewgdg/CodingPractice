@@ -20,6 +20,7 @@ public class Parser {
     State1 state1 = new State1();
     State2 state2 = new State2();
     State0 state0 = new State0();
+//    Operation stateE = (c)->{token.append(c);};
 
     State[][] transition = new State[][]{
             {state1,state2,state0},
@@ -29,7 +30,7 @@ public class Parser {
 
     public class State1 implements State{
 
-//        State[] transition ;//= new State[]{state1,state1,state0}; //doesnt work bc other state are not yet initialized, need to set transition after instantiation
+//        Operation[] transition ;//= new Operation[]{state1,state1,state0}; //doesnt work bc other state are not yet initialized, need to set transition after instantiation
 
         int id = 1;
         @Override
@@ -44,7 +45,7 @@ public class Parser {
     }
     public class State2 implements State{
 
-//        State[] transition = new State[]{state0,state2,state0};
+//        Operation[] transition = new Operation[]{state0,state2,state0};
         int id = 2;
         @Override
         public State transit(InputType type) {
@@ -57,7 +58,7 @@ public class Parser {
 
     public class State0 implements State{
 
-//        State[] transition = new State[]{state1,state2,state0};
+//        Operation[] transition = new Operation[]{state1,state2,state0};
         int id = 0;
         @Override
         public State transit(InputType type) {
@@ -66,7 +67,8 @@ public class Parser {
         public void dispatch(char c) {
 //            token.append(c);
             //reset everything
-            res.add(token.toString());
+            if(token.length()>0)
+                res.add(token.toString());
             token=new StringBuilder();
 
         }
@@ -82,6 +84,7 @@ public class Parser {
         }
     }
     public List<String> parse(String s){
+        //reset ops
         m_state=state0;
         res =new ArrayList<>();
         token = new StringBuilder();
@@ -99,7 +102,7 @@ public class Parser {
 
     public static void main(String[] args){
         Parser parser = new Parser();
-        System.out.println( parser.parse("asf_fdfdf123*12312333") );
+        System.out.println( parser.parse("asf_*fdfdf123*12312333") );
 
     }
 }

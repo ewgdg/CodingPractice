@@ -70,6 +70,8 @@ public class buttonQuestion_similarToSnackpack {
 
     }
 
+
+    //O target[0]*target[1]*button num
     public static boolean tabulationSolution(int[][] buttons, int[] target){
 
 
@@ -82,7 +84,7 @@ public class buttonQuestion_similarToSnackpack {
                 for(int[] button:buttons){
                     if(i-button[0]>=0 && j-button[1]>=0 ){
                         dp[i][j] = dp[i][j]|| dp[i-button[0]][j-button[1]];
-                        if(dp[i][j] && i>=target[0]) return true;//dont need exactly match, just within
+                        if(dp[i][j] && i>=target[0]) return true;//dont need exactly match, just within, j already <= target[1]
                     }
 
                 }

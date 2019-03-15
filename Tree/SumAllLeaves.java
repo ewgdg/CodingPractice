@@ -16,16 +16,16 @@ public class SumAllLeaves {
                 }
                 cur=cur.right;
 
-            }else{
+            }else{//left is not null , impossible for cur to be leaf
                 Node predecessor = findPredecessor(cur);
 
                 if(predecessor.right==null){
                     System.out.println(cur.val);
-//                    if(isLeaf(cur)){
+//                    if(isLeaf(cur)){  impossible for cur to be leaf
 //                        sum+=cur.val;
 //                    }
                     if(isLeaf(predecessor)){//need to exam predecessor right now bc we will add a right node to it so cannot detect leaf latter
-                        sum+=predecessor.val;
+                        sum+=predecessor.val; //no need if improve cond of isLeaf and add boolean isLeaf into Node class
                     }
                     predecessor.right=cur;
                     cur=cur.left;

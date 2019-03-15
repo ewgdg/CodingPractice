@@ -1,0 +1,36 @@
+here seem to be many links and other such stuff, but no actual code using pipes. The advantage of using java.io.PipedInputStream and java.io.PipedOutputStream
+is that there is no additional consumption of memory. ByteArrayOutputStream.toByteArray() returns a copy of the original buffer, so that means that whatever
+you have in memory, you now have two copies of it. Then writing to an InputStream means you now have three copies of the data.
+
+The code:
+
+// take the copy of the stream and re-write it to an InputStream
+PipedInputStream in = new PipedInputStream();
+final PipedOutputStream out = new PipedOutputStream(in);
+new Thread(new Runnable() {
+    public void run () {
+        try {
+            // write the original OutputStream to the PipedOutputStream
+            originalByteArrayOutputStream.writeTo(out);
+        } catch (IOException e) {
+            // logging and exception handling should go here
+        }
+    }
+}).start();
+This code assumes that the originalByteArrayOutputStream is a ByteArrayOutputStream as it is usually the only usable output stream,
+unless you're writing to a file. I hope this helps! The great thing about this is that since it's in a separate thread, it also is working in parallel,
+so whatever is consuming your input stream will be streaming out of your old output stream too. That is beneficial because the buffer can remain smaller
+and you'll have less latency and less memory usage.
+
+//more method
+http://blog.ostermiller.org/convert-java-outputstream-inputstream
+
+CircularByteBuffer cbb = new CircularByteBuffer();
+new Thread(
+  new Runnable(){
+    public void run(){
+      class1.putDataOnOutputStream(cbb.getOutputStream());
+    }
+  }
+).start();
+class2.processDataFromInputStream(cbb.getInputStream());

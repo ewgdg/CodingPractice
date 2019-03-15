@@ -1,0 +1,6 @@
+Some basic features for Oop are:
+Encapsulation of data (getters and setters)
+Class data.
+Polymorphism (very important) = property of an object to take another object properties (includes overloading and overriding methods)
+Inheritance.
+Abstraction (implementing interfaces and abstract classes methods)

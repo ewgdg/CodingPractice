@@ -6,7 +6,7 @@ public class gameoflife {
         //first bit prev
         //second bit as cur state
         //&1 to get first
-        //use >> to at last to proceed to next states
+        //use >> to at last to proceed to next ops
     }
 
     public static void gameOfLife(int[][] board) {

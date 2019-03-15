@@ -52,7 +52,7 @@ public class TreeToDoubleLinkList {
     }
 
 
-    //preOrder to list //same as previous one
+    //preOrder?? inorder?? to list //same as previous one
     public Node toListInOrder(Node root){
         Stack<Node> stack = new Stack<>();
 
@@ -85,13 +85,13 @@ public class TreeToDoubleLinkList {
 //            return null;
 //        }
 //
-//        Node res = root;
-//        Node right_child = root.right;
-//        Node left = toListInOrder(root.left);
-//        Node right = toListInOrder(right_child);
+//        Result res = root;
+//        Result right_child = root.right;
+//        Result left = toListInOrder(root.left);
+//        Result right = toListInOrder(right_child);
 //
 //        if(left != null){
-//            Node leftEnd = left.left;
+//            Result leftEnd = left.left;
 //            leftEnd.right = root;
 //            root.left=leftEnd;
 //            res = left;
@@ -103,7 +103,7 @@ public class TreeToDoubleLinkList {
 //
 //
 //        if(right!=null){
-//            Node rightEnd =right.left;
+//            Result rightEnd =right.left;
 //
 //            root.right = right;
 //            right.left=root;
@@ -203,8 +203,8 @@ public class TreeToDoubleLinkList {
         root.right.right = solver.new Node(3);
 
 
-//        Node l = solver.convertToList(root);
-//        Node l = solver.toListInOrder(root);
+//        Result l = solver.convertToList(root);
+//        Result l = solver.toListInOrder(root);
         Node l = solver.toListMorrisInOrder(root);
         solver.print(l);
     }

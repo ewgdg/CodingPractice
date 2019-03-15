@@ -1,0 +1,7 @@
+
+bsquid:CommentedOutCodeLine	"<This block of commented-out lines of code should be removed.(à¢¨í
+O
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ÍŒ¯¬
+isquid:S00117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìš ’
+nsquid:S001172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã‚£ôýÿÿÿÿ
+Usquid:UselessImportCheck",Remove this unused import 'java.util.Stack'.(ÞÈ†üúÿÿÿÿ

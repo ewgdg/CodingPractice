@@ -17,7 +17,7 @@ public class KMP {
                     res[i]=0;
                     i++;
                 }else {
-                    j = res[j] - 1 + 1;
+                    j = res[j-1] - 1 + 1;
                 }
             }
         }
@@ -40,7 +40,7 @@ public class KMP {
                 if(j==0){
                     i++;
                 }else {
-                    j = transition[j];
+                    j = transition[j-1];
                 }
 
             }
@@ -51,6 +51,6 @@ public class KMP {
 
 
     public static void main(String[] args){
-        System.out.println(contains("asdfasdfdsfsdfsssfdddewgdgdf","ewgdg"));
+        System.out.println(contains("asdfasdfdsfsdfsssfdddewgdgdf","asdfds"));
     }
 }

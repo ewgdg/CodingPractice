@@ -1,8 +1,11 @@
 import java.util.HashMap;
 
+
 public class PredictWinner {
 
 
+    //pick number from either end one by one
+    //larger sum win
     public boolean PredictTheWinner(int[] nums) {
         // HashMap<String,Integer> mem = new HashMap<>();
         // return helper(nums,0,nums.length-1,mem)>=0;
@@ -11,9 +14,46 @@ public class PredictWinner {
         // return alphaBeta(nums,0,nums.length-1,0,1,Integer.MIN_VALUE,Integer.MAX_VALUE)>=0;
     }
 
+    public int tabulation3(int[] nums){
+        int n = nums.length;
+        int[][] dp = new int[n][n]; //dp[i][j] i=lo j=hi
+        for(int i =0;i<n;i++){
+            dp[i][i] = nums[i]; //lo==hi
+        }
+
+        for(int size=2;size<=n;size++){ //need to start from size 2 bc size 1(i==j) relys on size 0 and size 0 indicate i>j where out of boundary cond might show up at j=n-1, i=0
+            for(int i =0; i+size-1<n;i++){
+                int j = i+size-1;
+                dp[i][j] = Math.max(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1]);//at size iter, all i,j of smaller size has been calcuated
+            }
+        }
+        return dp[0][n-1];
+
+
+    }
+
+    public int tabulation22(int[] nums){
+        int n = nums.length;
+        int[][] dp = new int[n+1][n]; //dp[size][i] j=i+size-1
+        for(int i =0;i<n;i++){
+            dp[0][i] = 0; //base cond  if(lo>hi) return 0;
+            dp[1][i] = nums[i]; //lo==hi
+        }
+
+        for(int size=2;size<=n;size++){
+            for(int i =0; i+size-1<n;i++){
+                int j = i+size-1;
+                dp[size][i] = Math.max(nums[i]-dp[size-1][i+1], nums[j]-dp[size-1][i]);
+            }
+        }
+        return dp[n][0];
+
+
+    }
+
     public int tabulation(int[] nums){
-        int[] dp= new int[nums.length]; //space compression reduce from 2d to 1d
-        //dp[i][j] represent max from subarray i,j. compressed j so that j is always i+size-1
+        int[] dp= new int[nums.length]; //space compression reduce from 2d to 1d with dp[size][i]
+        //dp[i][j] represent max from subarray i,j. compressed j so that j is always i+size-1 ， dp[size][i] j=i+size-1
         int n = nums.length;
         //init
         for(int i=0;i<n;i++){
@@ -33,7 +73,7 @@ public class PredictWinner {
         if(mem.containsKey(key)) return mem.get(key);
 
         if(lo>hi) return 0;
-        if(lo==hi) return nums[lo];
+        if(lo==hi) return nums[lo];//not necessary
         //assume optimal opponent
         int res = 0;
         //option 1, pick lo
@@ -49,7 +89,7 @@ public class PredictWinner {
         if(lo>hi) return 0;
         int sign=1;
         if(player!=1) sign = -1;
-        if(lo==hi) return nums[lo]*sign+val;
+        if(lo==hi) return nums[lo]*sign+val;//the evaluation score of max player = posi Sum-nega sum
         //assume optimal opponent
         int res = 0;
         int res1 = minmax(nums,lo+1,hi,val+nums[lo]*sign,player^1);
@@ -80,7 +120,7 @@ public class PredictWinner {
             if(res2>alpha){
                 alpha=res2;
             }
-            return alpha;
+            return Math.max(res1,res2);//return alpha;//alpha is always the max
         }else{
             int res1 = alphaBeta(nums,lo+1,hi,val+nums[lo]*sign,player^1,alpha,beta);
             if(res1<beta){
@@ -91,10 +131,20 @@ public class PredictWinner {
             if(res2<beta){
                 beta=res2;
             }
-            return beta;
+            return Math.min(res1,res2);//return beta;
 
         }
 
+
+    }
+    public static void main(String[] args){
+        PredictWinner solver = new PredictWinner();
+
+        int[] nums = new int[]{3,4,5,6,2,8,9,7};
+
+        System.out.println(solver.tabulation(nums));
+        System.out.println(solver.tabulation22(nums));
+        System.out.println(solver.tabulation3(nums));
 
     }
 }

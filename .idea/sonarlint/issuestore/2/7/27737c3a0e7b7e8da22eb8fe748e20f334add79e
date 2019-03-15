@@ -1,0 +1,13 @@
+
+;squid:S2097"Add a type test to this method.(Ý¢êÍýÿÿÿÿ
+‚squid:S1319,"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(–”•§
+T
+squid:S106h"9Replace this use of System.out or System.err by a logger.(‡ä½Åúÿÿÿÿ
+T
+squid:S106j"9Replace this use of System.out or System.err by a logger.(¤»øíúÿÿÿÿ
+T
+squid:S106k"9Replace this use of System.out or System.err by a logger.(ÐÃ±£øÿÿÿÿ
+nsquid:S3776K"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¼‹™œüÿÿÿÿ
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¨ÀÚÆùÿÿÿÿ
+Ysquid:S2259"BA "NullPointerException" could be thrown; "that" is nullable here.(Ü£—Ù
+Qsquid:S18549":Remove this useless assignment to local variable "status".(Ë®ÌØ

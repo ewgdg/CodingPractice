@@ -1,8 +1,28 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
+//Example 1:
+//s = "abc", t = "ahbgdc"
+//
+//Return true.
+//
+//Example 2:
+//s = "axc", t = "ahbgdc"
+//
+//Return false.
+//
+//Follow up:
+//If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B,
+// and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
 public class isSubsequence {
+    //for the follow up we want to pre-process the t string first
+    //The binary search is proportional to the number of occurrences of the specific character. In the worst case this is N,
+    // if all characters are the same. However for most strings, characters would be distributed so the binary search is O(logX),
+    // where X is likely to be significantly smaller than N. For a particular string, we are comparing O(MlogX) to O(N),
+    // where X is at most N. So for small x this is almost definitely better,
+    // since N is also much larger than m by the problem given. But for some strings it will be longer time.
+    //not very efficient although
+    //check number of matching subsequence with string iterator method for better method
     public static boolean solution(String s, String t) {
 
 //         int i1 =0;
@@ -47,7 +67,7 @@ public class isSubsequence {
             int mid = (left+right)/2;
 
             int cur = list.get(mid);
-            if(cur<=target){
+            if(cur<=target){//skip == , bc need to find larger
                 left = mid+1;
             }else{
                 right = mid;

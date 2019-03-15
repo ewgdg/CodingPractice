@@ -1,0 +1,25 @@
+
+gsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(ÍéÑùÿÿÿÿ
+bsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(§øú³
+bsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ãƒå¾
+†squid:S1319K"pThe type of the "visiting" object should be an interface such as "Set" rather than the implementation "HashSet".(†´‘<
+gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(ûâ©Óùÿÿÿÿ
+Rsquid:S1854";Remove this useless assignment to local variable "visited".(™Žé
+bsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(ªëØª
+gsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(¨ñ×Äþÿÿÿÿ
+Rsquid:S1854"<Remove this useless assignment to local variable "visiting".(¿ÉºH
+]squid:S1126O"AReplace this if-then-else statement by a single return statement.(„³Êþÿÿÿÿ
+ƒsquid:S1319p"mThe type of the "color" object should be an interface such as "Map" rather than the implementation "HashMap".(Žòû
+Dsquid:S1481"-Remove this unused "removals" local variable.(¿¼çÀ
+gsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Csquid:S1481"-Remove this unused "visiting" local variable.(¿ÉºH
+bsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ðŠ‘ã
+Ssquid:S1854"<Remove this useless assignment to local variable "removals".(¿¼çÀ
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ö¥›üÿÿÿÿ
+bsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(ãƒå¾
+bsquid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(ãƒå¾
+…squid:S1319K"oThe type of the "visited" object should be an interface such as "Map" rather than the implementation "HashMap".(†´‘<
+Esquid:S1125O")Remove the literal "false" boolean value.(„³Êþÿÿÿÿ
+Csquid:S1481",Remove this unused "visited" local variable.(™Žé
+bsquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(›òöÌ
+gsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ

@@ -11,6 +11,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Graph" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DynamicProgramming" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Game" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Design" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FileIO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CSP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Dictionary" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sais-java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Math" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

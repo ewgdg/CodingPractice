@@ -1,0 +1,14 @@
+
+nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(Ýç§áúÿÿÿÿ8”Õ¡†-
+’squid:S1319*"oThe type of the "counter" object should be an interface such as "Map" rather than the implementation "HashMap".(Ÿ»‚âýÿÿÿÿ8ÛÈ¹™†-
+isquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(˜î•Î8ŠõÌ†-
+V
+squid:S106;"9Replace this use of System.out or System.err by a logger.(¥µà8¶øœ†-
+V
+squid:S106v"9Replace this use of System.out or System.err by a logger.(ôç¯É8èÎ†-
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Š×¹«úÿÿÿÿ
+[
+squid:S106u"9Replace this use of System.out or System.err by a logger.(¬÷½õýÿÿÿÿ8…½Œ†-
+isquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(Êþÿò8ŠõÌ†-
+nsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8”Õ¡†-
+nsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(°ÃÉ¨ÿÿÿÿÿ8ª¨ƒÄ†-

@@ -5,7 +5,7 @@ public class IsBalancedTree {
     //or complete tree
 
 
-    //complete tree left to right hieght differ by at most1
+    //complete tree left to right hieght differ by at most 1
     //left first then right
     public static boolean isComplete(Node root) {
         //bfs
@@ -37,6 +37,29 @@ public class IsBalancedTree {
         }
         return true;
     }
+    public static boolean isCompleteSimplified(Node root) {
+        //bfs
+        if(root==null) return true;
+        boolean fully_complete=true;
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+
+        while(!queue.isEmpty()){
+
+            Node cur = queue.poll();
+            if(cur==null){
+                fully_complete=false;
+
+            }else{
+                if(!fully_complete) return false;
+                queue.add(cur.left);
+                queue.add(cur.right);
+            }
+
+        }
+        return true;
+    }
+
 
     //a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
     //    3
@@ -71,16 +94,41 @@ public class IsBalancedTree {
         return Math.max(left,right)+1;
     }
 
+    //another similar recursive
+    static class Result<T1,T2>{
+        T1 val1;
+        T2 val2;
+        public Result(T1 a, T2 b){
+            val1=a;
+            val2=b;
+        }
+    }
+    public static Result<Integer,Boolean> helper(Node root){
+        if(root==null) return new Result<Integer, Boolean>(0,true);
+
+        Result<Integer,Boolean> res = new Result<>(0,true);
+        Result<Integer,Boolean> left = helper(root.left);
+        Result<Integer,Boolean> right = helper(root.right);
+
+        if(Math.abs(left.val1-right.val1)>1 || !left.val2 || !right.val2){
+            res.val2=false;
+        }
+        res.val1 = Math.max(left.val1,right.val1)+1;
+        return res;
+    }
+
+
     public static void main(String[] args){
         Node bst =  new Node(5);
         bst.left = new Node(0);
         bst.left.right = new Node(1);//wrong node
         bst.left.left = new Node(1);//wrong node
         bst.right = new Node(9);
-//        bst.right.left = new Node(6);
+//        bst.right.left = new Result(6);
         bst.right.right = new Node(10);
-//        bst.right.right.right = new Node(10);
+//        bst.right.right.right = new Result(10);
         System.out.println(isComplete(bst));
+        System.out.println(isCompleteSimplified(bst));
         System.out.println(isBalanced(bst));
 
     }

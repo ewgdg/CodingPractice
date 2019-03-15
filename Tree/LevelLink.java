@@ -11,7 +11,41 @@ public class LevelLink {
 
      */
 
-    //without extra space
+    //without extra space //otherwise bfs??
+    //iterate each level with level link meanwhile setup levellink for the next level
+    public Node solve2(Node root){
+        Node levelStart = root;
+        root.next=null;
+        while(levelStart!=null){
+            Node parentPointer = levelStart;
+            Node childPointer = null;
+            levelStart=null;//reset
+            while(parentPointer!=null){
+                //iterate each child
+                Node[] children = new Node[]{parentPointer.left, parentPointer.right};
+                for(Node child:children){
+                    if(child!=null){
+                        if(levelStart==null) levelStart=child;
+                        if(childPointer!=null){
+                            childPointer.next=child;
+                            System.out.println(childPointer.val + "->" + (childPointer.next==null?"null":childPointer.next.val) );
+                        }
+                        childPointer=child;
+                    }
+                }
+                parentPointer=parentPointer.next;
+            }
+            if(childPointer!=null){
+                childPointer.next=null;//set the last child next to null
+                System.out.println(childPointer.val + "->" + (childPointer.next==null?"null":childPointer.next.val) );
+            }
+
+
+        }
+        return root;
+    }
+
+    //without extra space// retarded method
     public Node solution(Node root){
         Node parent=root;
         while(parent!=null){
@@ -69,8 +103,8 @@ public class LevelLink {
         return new Tuple(null,null,0);
     }
 
-
-    public Node solveBST(Node root){
+    //method 2 with extra space bfs
+    public Node solveBFS(Node root){
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
         while(!queue.isEmpty()){
@@ -104,10 +138,10 @@ public class LevelLink {
     public static void main(String[] args){
         Node.print(Node.tree);
         LevelLink solver =new LevelLink();
-//        Node node = solver.solution(Node.tree);
-//        Node.print(node);
-
-        solver.solveBST(Node.tree);
+//        Result node = solver.solution(Result.tree);
+//        Result.print(node);
+//        solver.solve2(Result.tree);
+        solver.solveBFS(Node.tree);
 
 
     }

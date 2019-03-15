@@ -56,6 +56,7 @@ public class MazeII {
 
 
 
+
     }
     static int[][] dirs = new int[][]{{0,1},{1,0},{-1,0},{0,-1}};
 

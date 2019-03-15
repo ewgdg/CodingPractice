@@ -42,17 +42,33 @@ public class isBST {
 //        if(prev.prev!=null&& prev.prev.val> root.val){
 //            return false;
 //        }
-        check(root.left,prev);
+        if(!check(root.left,prev)) return false;
         if(prev.prev!=null && prev.prev.val > root.val){
             return false;
         }
+        prev.prev=root;
+        if(!check(root.right,prev)) return false;
 
-        check(root.right,prev);
-
-        prev.prev=root.right;
+//        prev.prev=root.right;
         return true;
     }
 
+    //use iterator do in order iter??
+    public static boolean iterMethod(Node root){
+        InOrderIterator iter = new InOrderIterator(root);
+
+        Integer prev = null;
+
+        while(iter.hasNext()){
+            int cur = iter.next().val;
+            if(prev!=null && cur<prev){
+                return false;
+            }
+            prev=cur;
+        }
+        return true;
+
+    }
 
 
     public static void main( String[] args){
@@ -64,14 +80,15 @@ public class isBST {
 
         Node root =  new Node(1);
         root.left = new Node(0);
-        root.left.right = new Node(1);//wrong node
+        root.left.right = new Node(4);//wrong node
         root.right = new Node(3);
-        root.right.left = new Node(0);
+        root.right.left = new Node(2);
         root.right.right = new Node(4);
 
 
         System.out.println(solution(root));
-        System.out.println(check(root,new Reference(null)));
+        System.out.println(check(root,new Reference(null)));//wrong method for right child
+        System.out.println(iterMethod(root));
 
     }
 
