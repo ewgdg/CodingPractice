@@ -1,5 +1,6 @@
 .idea
-.idea/
+.idea/*
 out
-out/
+out/*
 .idea/workspace.xml
+Practice.iml
