@@ -36,7 +36,7 @@ public class Permutation {
         }
 
     }
-    //with litter space optimized , less space consumed
+    //with litter space optimized templist, less space consumed
     public void helper2( int[] nums , List<List<Integer>> ans, List<Integer> templist ,int begin   ){
         if(begin==nums.length){
             ans.add( new ArrayList<>(templist)  );

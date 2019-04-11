@@ -7,7 +7,7 @@ import static java.lang.System.in;
 import static java.lang.System.out;
 
 public class CircularByteBuffer {
-    //https://ostermiller.org/utils/doc/com/Ostermiller/util/CircularByteBuffer.html
+    //implement based on document from//https://ostermiller.org/utils/doc/com/Ostermiller/util/CircularByteBuffer.html
 
     static int INFINITE_SIZE = -1; //A buffer that will grow as things are added.
     int capacity;

@@ -41,7 +41,38 @@ public class PostOrderIterator {
         return null;
 
     }
+    //post order similar method with seperated stack for right children
+    public static void postOrder(Node root) {
+        Node cur = root;
+        Stack<Node> stack = new Stack<>();
+        Stack<Node> right = new Stack<>();//indicate do we print right child
+        boolean first =true;
+        while(!stack.isEmpty()||cur!=null){
+            while(cur!=null){
+                stack.add(cur);
+                right.add(cur.right);
+                cur=cur.left;
 
+            }
+            cur=  stack.peek();
+            if(!right.isEmpty() && right.peek()==cur.right){
+                cur=right.pop();
+            }else{
+                stack.pop();
+                if(!first){
+                    System.out.print(" ");
+
+                }else{
+                    first=false;
+                }
+                System.out.print(cur);
+                cur = null;
+            }
+
+
+        }
+
+    }
     public static void main(String[] args){
         PostOrderIterator iterator = new PostOrderIterator(Node.tree);
 

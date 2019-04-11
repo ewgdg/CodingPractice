@@ -13,7 +13,7 @@ import java.util.List;
 //
 //Follow up:
 //If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B,
-// and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
+// and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?-->use iterator for each substring ,hashmap char to list of iterator
 public class isSubsequence {
     //for the follow up we want to pre-process the t string first
     //The binary search is proportional to the number of occurrences of the specific character. In the worst case this is N,

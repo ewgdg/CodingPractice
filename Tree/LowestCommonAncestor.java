@@ -101,7 +101,7 @@ public class LowestCommonAncestor {
         }
 
         Result left = helper(root.left,val1,val2);
-        Result right = helper(root.left,val1,val2);
+        Result right = helper(root.right,val1,val2);
 
         if(left.ancestor!=null && right.ancestor!=null){
             //found the true ancestor

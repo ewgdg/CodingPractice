@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Stack;
 
 public class candyLongStream {
@@ -146,6 +147,46 @@ public class candyLongStream {
 
 
         return res;
+    }
+
+    //combine method
+    static long candies(int n, int[] arr) {
+
+        int up_streak=0;
+        int down_streak=0;
+
+        long res=1;
+        int slope =0;
+
+        int prev=1;
+        for(int i =1 ;i<n;i++){
+
+            if(arr[i] > arr[i-1]){
+                prev++;
+                res+=prev;
+                down_streak=0;
+            }else if(arr[i] < arr[i-1]){
+                down_streak++;
+                if(i==n-1 || arr[i] <=arr[i+1] ){//last elem of down streak
+                    res+= (long)(down_streak+1)*down_streak/2;
+                    if(down_streak>=prev){
+                        res+= down_streak+1-prev;
+                    }
+                    down_streak=0;
+                    prev=1;
+                }
+
+            }else{
+                res++;
+                prev=1;
+                down_streak=0;
+            }
+
+
+        }
+
+        return res;
+
     }
 
 
