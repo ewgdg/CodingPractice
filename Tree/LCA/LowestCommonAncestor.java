@@ -1,3 +1,5 @@
+package LCA;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -66,7 +68,7 @@ public class LowestCommonAncestor {
         }
         return -1;
     }
-    public boolean bstSearch(Node root,  int val){
+    public boolean bstSearch(Node root, int val){
 
         while(root!=null){
             if(val>root.val){

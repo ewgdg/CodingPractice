@@ -31,9 +31,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Excel {
+
+    //Method 1
     //a formula can be viewed as target cell = op(reference cells) , and a target cell could be reference of another cell e.g D2, (D2 is dependent on the target cell)
-    // so a cell should contains dependent formula(the formula is dependent on this cell) and target formula
-    //formula update only need to calc the diff so O 1,only works for sum op , if multiply then we need to re-cal the whole formula
+    //so a cell should contains dependent formula(the formula is dependent on this cell) and target formula
+    //bc all formulas are summation, update only need to calc the diff in O(1),only works for sum op , if multiply then we need to re-cal the whole formula
 
     //each time we set , we update up to O N formula, and each formula could affect other N-1 formula
     //so totally take O(N^2) for set ,
@@ -55,8 +57,10 @@ class Excel {
     //could improve by remove hashmap but use class Cell
 
 
-    //use topological sort for better extensibility
+    // see ExcelV2 for the implementation with topological sort for better extensibility.
 
+
+    //this implementation use method 1
     int[][] buffer;
     HashMap<String, HashMap<Formula,Integer>> map;//map input pos/reference cells to formula
     HashMap<String,Formula> formulas;//map target cell/ouput pos to formula
@@ -71,7 +75,7 @@ class Excel {
 
     }
     public void set(int r, char c, int v, boolean clean) {
-        if(clean)
+        if(clean)//clean formula or not
             clean( r,  c);
         int col = c-'A';
         int old = buffer[r-1][col];
@@ -116,13 +120,13 @@ class Excel {
     }
 
     class Formula{
-        int r;
-        int c;
+        int r;//row
+        int c;//column
         String key;
         String[] ranges;
         //type = sum
         public Formula(int r, char cchar, String[] strs){
-            this.r=r;
+            this.r=r;//row
             this.c =cchar-'A';
             this.key = getKey(r,cchar);
             this.ranges = Arrays.copyOf(strs, strs.length);

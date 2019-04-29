@@ -32,11 +32,11 @@ public class isBST {
         }
     }
 
-    //in order with static prev //wrong method ,cannot check right child's prev
+    //in order with static prev //wrong method ,cannot check right child's prev// fixed!!! after removing prev.prev=null
     public static boolean  check(Node root,Reference prev){
 
         if(root==null){
-            prev.prev=null;
+//            prev.prev=null; //fixed after remove this
             return true;
         }
 //        if(prev.prev!=null&& prev.prev.val> root.val){

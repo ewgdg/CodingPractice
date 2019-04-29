@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class DisjointSet {
+
     class Node{
         int data;//need this bc after we find parent we might need to use the data
         Node parent;
@@ -20,7 +21,7 @@ public class DisjointSet {
         count=0;
     }
 
-    public Node makeSet(int data){
+    public Node makeSet(int data){//makeSetIfAbsent
         if(!map.containsKey(data)){
             count++;
             map.put(data,new Node(data));

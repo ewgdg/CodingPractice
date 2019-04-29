@@ -2,7 +2,7 @@ import java.util.Comparator;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class MultiSet<K extends Comparable<K>> { // or named as bag!!!! // another way for compare is to cast K into Comparable<? super K>
+public class MultiSet<K extends Comparable<K>> { // or named as bag // another way for compare is to cast K into Comparable<? super K>
 
     TreeMap<K,DLL<K>> map;
     public MultiSet(){
@@ -119,7 +119,7 @@ public class MultiSet<K extends Comparable<K>> { // or named as bag!!!! // anoth
         }
 
     }
-    class Node<T>{ //or simply Node and use K from parent
+    public class Node<T>{ //or simply Node and use K from parent
         Node prev,next;
         T data;
         public Node(T val){
