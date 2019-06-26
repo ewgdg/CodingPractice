@@ -1,8 +1,0 @@
-
-T
-squid:S106;"9Replace this use of System.out or System.err by a logger.(­òØéúÿÿÿÿ
-isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(î×›™
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õí¹Ïÿÿÿÿÿ
-Osquid:S1854	"8Remove this useless assignment to local variable "colc".(ÿÓªÞ
-Nsquid:S1854"7Remove this useless assignment to local variable "col".(¡áýÐ
-isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î×›™

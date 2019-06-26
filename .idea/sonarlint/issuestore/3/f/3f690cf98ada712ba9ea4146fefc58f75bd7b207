@@ -1,13 +1,0 @@
-
-T
-squid:S106t"9Replace this use of System.out or System.err by a logger.(ù«ÔÚøÿÿÿÿ
-"squid:ClassVariableVisibilityCheck6"NMake hi a static final constant or non-public and provide accessors if needed.(›òŠñúÿÿÿÿ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂÏ¤¹ùÿÿÿÿ
-O
-squid:S106v"9Replace this use of System.out or System.err by a logger.(Åş‘
-T
-squid:S106r"9Replace this use of System.out or System.err by a logger.(àï¯ıÿÿÿÿ
-|"squid:ClassVariableVisibilityCheck5"NMake lo a static final constant or non-public and provide accessors if needed.(Æ¼á
-[
-squid:S106u"9Replace this use of System.out or System.err by a logger.(Ë×¥›ùÿÿÿÿ8ë®‡Íƒ-
-msquid:S00100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“®«Í8ë®‡Íƒ-

@@ -1,5 +1,0 @@
-
-gsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¦™ÎÊ
-T
-squid:S1061"9Replace this use of System.out or System.err by a logger.(¬ˆ™ıÿÿÿÿ
-9squid:S1659""Declare "root" on a separate line.(áœâ•

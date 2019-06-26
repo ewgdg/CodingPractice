@@ -1,6 +1,0 @@
-
-gsquid:CommentedOutCodeLine
-"<This block of commented-out lines of code should be removed.(Ó’ü•ýÿÿÿÿ
-gsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¦™ÎÊ
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§‡Ãüÿÿÿÿ8ïÏÅºþ,
-9squid:S1659""Declare "root" on a separate line.(áœâ•

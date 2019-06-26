@@ -1,18 +1,0 @@
-
-W
-squid:S106‘"9Replace this use of System.out or System.err by a logger.(Ù×²á8”å’ª-
-fsquid:S00100	"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ø—Ù
-Wsquid:S1854w"9Remove this useless assignment to local variable "alpha".(ÄåÅß8²Á½Ü€-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ù êÃøÿÿÿÿ
-nsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(È™…õøÿÿÿÿ8¬ÛÜİ€-
-jsquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(Û­Ğ8×¨ÆÜ€-
-W
-squid:S106"9Replace this use of System.out or System.err by a logger.(ĞËÖì8¦æª-
-‡squid:S1319E"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(Àú¬ïùÿÿÿÿ
-nsquid:S3776h"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(óÜøÿÿÿÿ
-asquid:CommentedOutCodeLine
-"<This block of commented-out lines of code should be removed.(ÀüÁL
-Wsquid:S1854‚"8Remove this useless assignment to local variable "beta".(‰™¼Ê8‹¹¿Ü€-
-\
-squid:S106"9Replace this use of System.out or System.err by a logger.(¤ğûåıÿÿÿÿ8”å’ª-
-?squid:S1481n"(Remove this unused "res" local variable.(ıœºë

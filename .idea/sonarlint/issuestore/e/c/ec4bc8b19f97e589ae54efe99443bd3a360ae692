@@ -1,10 +1,0 @@
-
-psquid:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(’ö¨™
-T
-squid:S106>"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
-T
-squid:S106E"9Replace this use of System.out or System.err by a logger.(É÷Ú…þÿÿÿÿ
-T
-squid:S106F"9Replace this use of System.out or System.err by a logger.(÷ÓÊ¹øÿÿÿÿ
-Zsquid:UselessImportCheck"6Remove this unused import 'org.apache.log4j.Priority'.(Î»ãŽ
-gsquid:S11492"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÃÖ‘ø

@@ -1,17 +1,0 @@
-
-isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ÇÙ§‚
-T
-squid:S1062"9Replace this use of System.out or System.err by a logger.(ÇùŒªüÿÿÿÿ
-O
-squid:S106A"9Replace this use of System.out or System.err by a logger.(Éºåà
-O
-squid:S106?"9Replace this use of System.out or System.err by a logger.(º·Åá
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(êØôŽ8ËšŸ´€-
-„squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÇÙ§‚
-O
-squid:S1066"9Replace this use of System.out or System.err by a logger.(¸¸Åô
-bsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(òÎ€£
-T
-squid:S106@"9Replace this use of System.out or System.err by a logger.(š€š øÿÿÿÿ
-hsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(™ÇÐ\8ËšŸ´€-
-isquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(êØôŽ8ËšŸ´€-

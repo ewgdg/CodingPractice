@@ -1,13 +1,0 @@
-
-hsquid:S1871J"LThis branch's code block is the same as the block for the branch on line 73.(¨©°ˆøÿÿÿÿ
-Wsquid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
-osquid:S1871K"LThis branch's code block is the same as the block for the branch on line 73.(ƒ¹‚Éıÿÿÿÿ8¸ğÄ†-
-isquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(ŒÔ›¸8¸ğÄ†-
-osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯Ì¢˜üÿÿÿÿ8¸ğÄ†-
-jsquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(‘Ş„ò8¸ğÄ†-
-W
-squid:S106"9Replace this use of System.out or System.err by a logger.(ã÷……8¸ğÄ†-
-qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÒÁ¨Ãüÿÿÿÿ8¸ğÄ†-
-psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì‡ëì8¸ğÄ†-
-usquid:S00117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øú‡³øÿÿÿÿ8¸ğÄ†-
-vsquid:S00117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øú‡³øÿÿÿÿ8¸ğÄ†-

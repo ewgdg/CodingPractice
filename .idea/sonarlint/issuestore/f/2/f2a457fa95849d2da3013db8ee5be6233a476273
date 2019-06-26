@@ -1,8 +1,0 @@
-
-Hsquid:S1612",Replace this lambda with a method reference.(Ë¶Ÿ³øÿÿÿÿ
-Msquid:S1611"1Remove the parentheses around the "key" parameter(Ë¶Ÿ³øÿÿÿÿ
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(›„¿µýÿÿÿÿ8ô¶—†-
-[
-squid:S106]"9Replace this use of System.out or System.err by a logger.(¸šñÙüÿÿÿÿ8¯ëÈ—†-
-tsquid:S2234>"VParameters to swap have the same names but not the same order as the method arguments.(øèþƒ8¯ëÈ—†-
-;squid:S21195"Save and re-use this "Random".(¼ÝÅf8¯ëÈ—†-

@@ -1,13 +1,0 @@
-
-asquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ÎÒ€
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—øãžýÿÿÿÿ
-gsquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(£ÊÔàûÿÿÿÿ
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(—øãžýÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹—¦ìÿÿÿÿÿ
-gsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(À³Žšþÿÿÿÿ
-gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ª‘¾¼þÿÿÿÿ
-ƒ squid:ForLoopCounterChangedCheck0"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
-gsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(îì‰Âýÿÿÿÿ
-O
-squid:S106["9Replace this use of System.out or System.err by a logger.(§†û
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ï•¿¿üÿÿÿÿ

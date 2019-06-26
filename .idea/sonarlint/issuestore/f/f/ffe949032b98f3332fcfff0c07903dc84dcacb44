@@ -1,15 +1,0 @@
-
-V
-squid:S106v"9Replace this use of System.out or System.err by a logger.(ş†•8¦Ó€“ÿ,
-usquid:S3776k"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(”Ô±äùÿÿÿÿ8¦Ó€“ÿ,
-[
-squid:S106("9Replace this use of System.out or System.err by a logger.(ªì†Ùûÿÿÿÿ8¦Ó€“ÿ,
-V
-squid:S106>"9Replace this use of System.out or System.err by a logger.(µÉü8¦Ó€“ÿ,
-osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ƒî¢æÿÿÿÿÿ8¦Ó€“ÿ,
-bsquid:S2583v"DChange this condition so that it does not always evaluate to "false"(ş†•8¦Ó€“ÿ,
-usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(òµêøÿÿÿÿ8í«ä’ÿ,
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ªì†Ùûÿÿÿÿ8¹¼è’ÿ,
-\
-squid:S106"9Replace this use of System.out or System.err by a logger.(È‚ÊÊşÿÿÿÿ8¦Ó€“ÿ,

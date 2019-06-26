@@ -1,14 +1,0 @@
-
-rsquid:S001168"ZRename this field "max_rob_current" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùğ 
-N
-squid:S106\"9Replace this use of System.out or System.err by a logger.(ÜÁ¸n
-O
-squid:S106Z"9Replace this use of System.out or System.err by a logger.(„ñ
-{squid:S001169"^Rename this field "max_without_current" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Êü¥ÿÿÿÿÿ
-T
-squid:S106["9Replace this use of System.out or System.err by a logger.(öôßüÿÿÿÿ
-‰"squid:ClassVariableVisibilityCheck8"[Make max_rob_current a static final constant or non-public and provide accessors if needed.(ùğ 
-’"squid:ClassVariableVisibilityCheck9"_Make max_without_current a static final constant or non-public and provide accessors if needed.(²Êü¥ÿÿÿÿÿ
-squid:S1319"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(öŞ(
-Rsquid:S2696"6Make the enclosing method "static" or remove this set.(÷óˆ¾üÿÿÿÿ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†©íÂúÿÿÿÿ

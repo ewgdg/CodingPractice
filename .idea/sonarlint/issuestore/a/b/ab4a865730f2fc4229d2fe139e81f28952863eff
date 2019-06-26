@@ -1,9 +1,0 @@
-
-T
-squid:S106$"9Replace this use of System.out or System.err by a logger.(†íåÃýÿÿÿÿ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(´£øÈÿÿÿÿÿ
-`squid:S3358 "DExtract this nested ternary operation into an independent statement.(þ¸ž¶øÿÿÿÿ
-isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àõ¶¾
-isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜®ªû
-Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
-Tsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ

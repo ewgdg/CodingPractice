@@ -1,19 +1,0 @@
-
-„ squid:ForLoopCounterChangedCheck!"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
-ƒ squid:ForLoopCounterChangedCheck]"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
-„ squid:ForLoopCounterChangedCheck`"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥§’üÿÿÿÿÿ
-gsquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(»ÆÙäüÿÿÿÿ
-U
-squid:S106‹"9Replace this use of System.out or System.err by a logger.(ÉÌöðüÿÿÿÿ
-O
-squid:S106Œ"9Replace this use of System.out or System.err by a logger.(èºi
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¦ƒ®¾ûÿÿÿÿ
-nsquid:S3776K"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(®ø´Šûÿÿÿÿ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÉØÒšûÿÿÿÿ
-gsquid:UselessImportCheck">Remove this unused import 'org.slf4j.impl.StaticLoggerBinder'.(ÞÚÞéùÿÿÿÿ
-`squid:UselessImportCheck"7Remove this unused import 'java.util.stream.Collector'.(ß‹ÎÓøÿÿÿÿ
-gsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÀÌ¤»
-gsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(‹÷®õ
-gsquid:S1149P"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÀÌ¤»
-gsquid:S1149Q"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(‹÷®õ

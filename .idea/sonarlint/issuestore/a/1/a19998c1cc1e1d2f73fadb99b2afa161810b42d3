@@ -1,13 +1,0 @@
-
-nsquid:S00117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïêøðþÿÿÿÿ
-O
-squid:S106d"9Replace this use of System.out or System.err by a logger.(ŽÍøü
-isquid:S00117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡‚ê®
-N
-squid:S106c"9Replace this use of System.out or System.err by a logger.(áÍ¼&
-‚squid:S1319"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(ž‹ðŸ
-nsquid:S00117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒæÆ øÿÿÿÿ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‚­çéþÿÿÿÿ
-hsquid:S00117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ãÙJ
-T
-squid:S106b"9Replace this use of System.out or System.err by a logger.(À§ÝÊýÿÿÿÿ

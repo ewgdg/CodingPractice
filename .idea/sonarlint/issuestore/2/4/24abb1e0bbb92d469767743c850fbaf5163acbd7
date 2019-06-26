@@ -1,6 +1,0 @@
-
-bsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(Þ³ƒÌ
-T
-squid:S1065"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
-isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÚÛóæ
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‚š·àùÿÿÿÿ

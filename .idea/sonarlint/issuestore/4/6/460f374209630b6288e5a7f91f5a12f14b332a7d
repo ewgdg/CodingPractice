@@ -1,19 +1,0 @@
-
-Xsquid:S1854q":Remove this useless assignment to local variable "stack2".(à·úÕ8ÚéØÏ„-
-gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(µ‡Şêûÿÿÿÿ
-Lsquid:S1481"(Remove this unused "mod" local variable.(í‘àÀøÿÿÿÿ8³óÆĞ„-
-isquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(ëúå´8§É•Ï„-
-ssquid:S1149p"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(©¾¤¤ıÿÿÿÿ8ªù·Î„-
-W
-squid:S106¦"9Replace this use of System.out or System.err by a logger.(ËË…›8áøÙÏ„-
-W
-squid:S106©"9Replace this use of System.out or System.err by a logger.(Û×éÇ8»›ÿÏ„-
-nsquid:S1149q"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(à·úÕ8–·áÏ„-
-\
-squid:S106¬"9Replace this use of System.out or System.err by a logger.(Ü‹Ùıÿÿÿÿ8ËÍÈĞ„-
-Isquid:S1481q"+Remove this unused "stack2" local variable.(à·úÕ8–·áÏ„-
-gsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(¯ğô–şÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Éá¶ÿüÿÿÿÿ
-[squid:S1854"7Remove this useless assignment to local variable "mod".(í‘àÀøÿÿÿÿ8³óÆĞ„-
-tsquid:S1149‹"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(©¾¤¤ıÿÿÿÿ8ö‡ÁĞ„-
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(æºß‘ùÿÿÿÿ

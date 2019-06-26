@@ -1,11 +1,0 @@
-
-Šsquid:S1319"nThe type of the "graphb" object should be an interface such as "Map" rather than the implementation "HashMap".(¢´àÿÿÿÿÿ
-†squid:S1319#"oThe type of the "visited" object should be an interface such as "Set" rather than the implementation "HashSet".(Ÿ²ä
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢´àÿÿÿÿÿ
-…squid:S1319#"nThe type of the "graphb" object should be an interface such as "Map" rather than the implementation "HashMap".(Ÿ²ä
-O
-squid:S106Y"9Replace this use of System.out or System.err by a logger.(‚×œó
-…squid:S1319#"nThe type of the "grapha" object should be an interface such as "Map" rather than the implementation "HashMap".(Ÿ²ä
-N
-squid:S106X"9Replace this use of System.out or System.err by a logger.(öÄ=
-Šsquid:S1319"nThe type of the "grapha" object should be an interface such as "Map" rather than the implementation "HashMap".(¢´àÿÿÿÿÿ

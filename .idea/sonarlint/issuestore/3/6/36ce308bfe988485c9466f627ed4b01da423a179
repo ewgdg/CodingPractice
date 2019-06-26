@@ -1,7 +1,0 @@
-
-…squid:S1319"nThe type of the "id_map" object should be an interface such as "Map" rather than the implementation "HashMap".(ΏΈα
-†squid:S1319"oThe type of the "counter" object should be an interface such as "Map" rather than the implementation "HashMap".(ΏΈα
-jsquid:S00116"RRename this field "next_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(τ«’²
-isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΏΈα
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(κ‰όÿÿÿÿ
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(σπ¬θύÿÿÿÿ

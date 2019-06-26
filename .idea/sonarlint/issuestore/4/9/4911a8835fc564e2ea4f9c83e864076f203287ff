@@ -1,8 +1,0 @@
-
-esquid:S1192-"NDefine a constant instead of duplicating this literal "y@example.com" 3 times.(ΕΆρ§
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(…Ο»ϋÿÿÿÿ
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Ο»ϋÿÿÿÿ
-O
-squid:S106."9Replace this use of System.out or System.err by a logger.(§†ϋ
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ξ•±€
-7squid:S3626"Remove this redundant jump.(ύλªόÿÿÿÿ

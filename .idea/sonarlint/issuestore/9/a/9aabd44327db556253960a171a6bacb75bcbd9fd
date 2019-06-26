@@ -1,12 +1,0 @@
-
-Xsquid:S1854":Remove this useless assignment to local variable "digits".(—ÆáØ8³ï¿ÍÖ,
-psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(‘Çï”8ŒçËÍÖ,
-Bsquid:S16596"Declare "b" on a separate line.(íåëÿøÿÿÿÿ8Â•²ÔÖ,
-Isquid:S1481"+Remove this unused "digits" local variable.(—ÆáØ8³ï¿ÍÖ,
-psquid:S3776,"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ƒî¹Œ8Ë¼»ÔÖ,
-[
-squid:S106B"9Replace this use of System.out or System.err by a logger.(­þ¬ûÿÿÿÿ8‹ÌŽÔÖ,
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ô•ò›üÿÿÿÿ
->squid:S3626"Remove this redundant jump.(ç¥„˜ùÿÿÿÿ8Æþ„ÔÖ,
-U
-squid:S106C"9Replace this use of System.out or System.err by a logger.(Ì‰¬Q8¡ª¿ÔÖ,

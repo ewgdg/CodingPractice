@@ -1,8 +1,0 @@
-
-T
-squid:S106b"9Replace this use of System.out or System.err by a logger.(´Ï‘Æúÿÿÿÿ
-gsquid:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ñêÌò
-Zsquid:UselessImportCheck"6Remove this unused import 'org.apache.log4j.Priority'.(Î»ãŽ
-ƒ squid:ForLoopCounterChangedCheck)"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆžç¹ùÿÿÿÿ
-Fsquid:S1066/"/Merge this if statement with the enclosing one.(ÉÙ·Ò

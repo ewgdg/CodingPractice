@@ -1,8 +1,0 @@
-
-jsquid:S3008R"NRename this field "DAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİøŸıÿÿÿÿ
-tsquid:S3008g"XRename this field "DirectedGraph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒêÓşÿÿÿÿÿ
-qsquid:S3008}"ZRename this field "UndirectedGraph" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ÿ™†
-~squid:S3008“"fRename this field "DirectedGraph_NegativeCycle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ˆÕ
-fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùüæ”
-Hsquid:S16127",Replace this lambda with a method reference.(¸ñöÒşÿÿÿÿ
-Ksquid:S16117"/Remove the parentheses around the "k" parameter(¸ñöÒşÿÿÿÿ

@@ -1,39 +1,0 @@
-
-;squid:S1659"Declare "y" on a separate line.(‰«¥’üÿÿÿÿ
-;squid:S2097"Add a type test to this method.(Ï«¡Ïüÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ‘
-asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿ“Ÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥Ñ²þÿÿÿÿ
-gsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-bsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(‹Á…ï
-gsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(›ŠœÓûÿÿÿÿ
-asquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(Ðºb
-bsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(Éô¨ß
-gsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-gsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-gsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(‰“õµùÿÿÿÿ
-bsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(çÏ¡Ë
-bsquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(õÕÃ
-gsquid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-gsquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(ãàý€ÿÿÿÿÿ
-bsquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(ÉŽ×Ä
-bsquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(©â»Œ
-bsquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(ÉŽ×Ä
-bsquid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(©â»Œ
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-P
-squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(©Ÿô¬
-U
-squid:S106‰"9Replace this use of System.out or System.err by a logger.(ÚÆ¢þÿÿÿÿ
-U
-squid:S106Š"9Replace this use of System.out or System.err by a logger.(¹¾ÉÅøÿÿÿÿ
-P
-squid:S106‹"9Replace this use of System.out or System.err by a logger.(¶–ë
-U
-squid:S106Œ"9Replace this use of System.out or System.err by a logger.(Û¾Éãøÿÿÿÿ
-€"squid:ClassVariableVisibilityCheck"MMake x a static final constant or non-public and provide accessors if needed.(‰«¥’üÿÿÿÿ
-€"squid:ClassVariableVisibilityCheck"MMake y a static final constant or non-public and provide accessors if needed.(‰«¥’üÿÿÿÿ
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆ°ËÂ
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(â¿ï¯
-[squid:S2259"?A "NullPointerException" could be thrown; "c" is nullable here.(©ƒü«üÿÿÿÿ

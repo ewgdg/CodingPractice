@@ -1,45 +1,0 @@
-
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-Ysquid:S001073"<Method has 9 parameters, which is greater than 7 authorized.(Ëİº°øÿÿÿÿ
-hsquid:CommentedOutCodeLineù"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-hsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(Ò›üÖúÿÿÿÿ
-‡squid:S13193"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(Ëİº°øÿÿÿÿ
-gsquid:CommentedOutCodeLinek"<This block of commented-out lines of code should be removed.(Ÿ°…ãıÿÿÿÿ
-gsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(Ûï‡“ùÿÿÿÿ
-hsquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-ˆsquid:S13193"lThe type of the "seen" object should be an interface such as "Set" rather than the implementation "HashSet".(Ëİº°øÿÿÿÿ
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-@squid:S1659™"#Declare "MOUSE" on a separate line.(Åş—™úÿÿÿÿ
-usquid:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(»Õèƒüÿÿÿÿ
-P
-squid:S106¹"9Replace this use of System.out or System.err by a logger.(ìà½
-hsquid:CommentedOutCodeLineğ"<This block of commented-out lines of code should be removed.(Ò›üÖúÿÿÿÿ
-P
-squid:S106Å"9Replace this use of System.out or System.err by a logger.(ºâ
-7squid:S2097†"Add a type test to this method.(ÜÑã
-_squid:S2259ˆ"BA "NullPointerException" could be thrown; "that" is nullable here.(Îíïµúÿÿÿÿ
-=squid:S1481"&Remove this unused "n" local variable.(Áİé…
-gsquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(¢ğ¥¿üÿÿÿÿ
-P
-squid:S106º"9Replace this use of System.out or System.err by a logger.(ºâ
-nsquid:S37763"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ëİº°øÿÿÿÿ
-hsquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-bsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(”¥Åá
-bsquid:CommentedOutCodeLineı"<This block of commented-out lines of code should be removed.(çıĞW
-jsquid:S3776˜"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(âš–”
-bsquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(ûùù¿
-bsquid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(ıü¬ô
-hsquid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(³æ€øÿÿÿÿ
-gsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(‹á˜úÿÿÿÿ
-gsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ÔÑ«ªûÿÿÿÿ
-gsquid:CommentedOutCodeLineT"<This block of commented-out lines of code should be removed.(Ÿ°…ãıÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘–‰º
-hsquid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(¾ôˆ¨ùÿÿÿÿ
-O
-squid:S106Ã"9Replace this use of System.out or System.err by a logger.(Ò†˜7
-bsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(”¥Åá
-hsquid:CommentedOutCodeLineÿ"<This block of commented-out lines of code should be removed.(¾ôˆ¨ùÿÿÿÿ
-csquid:CommentedOutCodeLineû"<This block of commented-out lines of code should be removed.(¡Õ±š
-hsquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(‡™Œıÿÿÿÿ
-P
-squid:S106¾"9Replace this use of System.out or System.err by a logger.(å±Ş¹

@@ -1,18 +1,0 @@
-
-‰squid:S13194"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(±¦Ù­8“±ü„‚-
-nsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(Ï¼ê§üÿÿÿÿ8ùü„‚-
-psquid:S3776]"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(É¨åÿ8„‘¥ƒ‚-
-Žsquid:S1319	"kThe type of the "mem" object should be an interface such as "Map" rather than the implementation "HashMap".(àŽ—˜ùÿÿÿÿ8Ð§«‚-
-isquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(¯¯Ö‹8¶òó‚‚-
-Xsquid:S1854œ"9Remove this useless assignment to local variable "nums2".(ƒðÏ¿8±ËÎ‚‚-
-V
-squid:S106ž"9Replace this use of System.out or System.err by a logger.(Žú·}8‹ÈÃƒ‚-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ï¼ê§üÿÿÿÿ8À°¯‚‚-
-\
-squid:S106"9Replace this use of System.out or System.err by a logger.(§Ì‘úÿÿÿÿ8¢ž©‚‚-
-Isquid:S1481œ"*Remove this unused "nums2" local variable.(ƒðÏ¿8±ËÎ‚‚-
-isquid:CommentedOutCodeLineY"<This block of commented-out lines of code should be removed.(æ•ÖÝ8ùü„‚-
-isquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(æ•ÖÝ8Ð¬œ‚‚-
-jsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(ážÖÏ8¢¾Ý„‚-
-zsquid:S1488“"[Immediately return this expression instead of assigning it to the temporary variable "res".(Ç×¹8ë×¬‚‚-
-jsquid:CommentedOutCodeLine›"<This block of commented-out lines of code should be removed.(ŸÎ–È8ŠËÖƒ‚-
