@@ -4,3 +4,5 @@ out
 out/*
 .idea/workspace.xml
 Practice.iml
+target
+target/*

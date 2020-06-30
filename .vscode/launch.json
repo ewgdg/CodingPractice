@@ -1,0 +1,287 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MonotoneQueue",
+      "request": "launch",
+      "mainClass": "Array.MonotoneQueue",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - cspNqueen",
+      "request": "launch",
+      "mainClass": "ConstraintsSatisfactionProblem.cspNqueen",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Abbreviation<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "Abbreviation",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-CalculatorV<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "CalculatorV",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-CountofSmallerNumbersAfterSelf<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "CountofSmallerNumbersAfterSelf",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Domino_Tromino_tiling<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "Domino_Tromino_tiling",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Guess_Number_Higher_or_Lower_II<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "Guess_Number_Higher_or_Lower_II",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-MinimumEditDistance<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "MinimumEditDistance",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-MonotoneQueue<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "MonotoneQueue",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-OnesandZeroes<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "OnesandZeroes",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PartitionIntoDisjoint<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "PartitionIntoDisjoint",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-PermutationII<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "PermutationII",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-TrippleSum<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "Sort.TrippleSum",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-StockIII<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "StockIII",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-StockWithCooldown<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "StockWithCooldown",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Sum_of_Subarray_Minimums<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "Sum_of_Subarray_Minimums",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-SwapSorter<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "SwapSorter",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-TopKfreq<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "TopKfreq",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-binarySearch<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "binarySearch",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-binarySearchForSmallerClosest<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "binarySearchForSmallerClosest",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-burstballoon<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "burstballoon",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-calculatorIII<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "calculatorIII",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-calculatorIV<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "calculatorIV",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-circularMaxSubArray<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "circularMaxSubArray",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-convertToReversedPolishNotation<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "convertToReversedPolishNotation",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-isConvexPolygon<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "isConvexPolygon",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-largestSumOfAverages<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "largestSumOfAverages",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-mantainMedianNonDup<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "mantainMedianNonDup",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-maxSumfromLeftAndMainView<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "maxSumfromLeftAndMainView",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-median2array<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "median2array",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-minimum_subset_sum_diff<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "minimum_subset_sum_diff",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-opFirstCalculator<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "opFirstCalculator",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-quickSelection<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "quickSelection",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-robHouseI<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "robHouseI",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-robHouseII<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "robHouseII",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-robhouseIII<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "robhouseIII",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-splitDeck<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "splitDeck",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-subsequenceSum<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "subsequenceSum",
+      "projectName": "Practice_572b3514"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-superPalindrome<Practice_572b3514>",
+      "request": "launch",
+      "mainClass": "superPalindrome",
+      "projectName": "Practice_572b3514"
+    }
+  ]
+}

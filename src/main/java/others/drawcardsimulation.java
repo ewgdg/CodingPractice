@@ -1,3 +1,6 @@
+
+package others;
+
 // Model 2 (M2):
 
 // P(AB) = P(both are titanic and he plays one of them) = 1/7 * 1/7 = 1/49
@@ -11,6 +14,8 @@
 // P(B) = P(at least one of card is titanic) = 1 - 6/7*6/7 = 13/49
 // P(A|B) = P(AB)/P(B) = 1/13
 
-public class Test {
+
+public class drawcardsimulation {
+
 
 }
