@@ -1,4 +1,4 @@
-package Graph;
+package graph;
 import java.util.HashMap;
 
 public class Graph_simpler {

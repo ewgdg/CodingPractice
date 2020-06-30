@@ -1,4 +1,4 @@
-package StateMachine;
+package stateMachine;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Design;
+package design;
 // import java.util.Comparator;
 import java.util.TreeMap;
 // import java.util.TreeSet;

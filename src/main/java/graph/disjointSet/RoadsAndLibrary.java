@@ -1,4 +1,4 @@
-package Graph.disjointSet;
+package graph.disjointSet;
 
 import java.util.HashMap;
 

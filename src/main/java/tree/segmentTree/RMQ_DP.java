@@ -1,4 +1,4 @@
-package Tree.SegmentTree;
+package tree.segmentTree;
 
 public class RMQ_DP {
 

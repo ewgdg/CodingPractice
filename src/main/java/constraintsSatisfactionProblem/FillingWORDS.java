@@ -1,4 +1,4 @@
-package ConstraintsSatisfactionProblem;
+package constraintsSatisfactionProblem;
 
 public class FillingWORDS {
 

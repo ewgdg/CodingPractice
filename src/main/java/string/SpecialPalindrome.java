@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class SpecialPalindrome {
     //A string is said to be a special palindromic string if either of two conditions is met:

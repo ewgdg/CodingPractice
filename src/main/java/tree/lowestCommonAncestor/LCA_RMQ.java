@@ -1,4 +1,4 @@
-package tree.LCA;
+package tree.lowestCommonAncestor;
 
 public class LCA_RMQ {
     //range minimum query

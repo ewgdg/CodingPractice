@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 public class SumAllLeaves {
     //第一题是求二叉树的所有叶节点的和 先是说了inorder的方法，然后面试官问能不能不用额外空间

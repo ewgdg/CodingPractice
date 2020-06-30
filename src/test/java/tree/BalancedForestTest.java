@@ -1,3 +1,4 @@
+package tree;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,8 +10,6 @@ import java.util.Scanner;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import tree.BalancedForest_linear;
 
 public class BalancedForestTest {
     BalancedForest_linear solver;

@@ -1,4 +1,4 @@
-package Design;
+package design;
 import java.io.*;
 import java.nio.file.Paths;
 import java.util.*;
@@ -266,7 +266,7 @@ public class FraudulentActivityNotifications {
         Random rand = new Random();
 
         try(
-                BufferedReader in = new BufferedReader(new FileReader(  Paths.get("FileIO/test.txt").toFile() ));
+            BufferedReader in = new BufferedReader(new FileReader(  Paths.get("fileIO/test.txt").toFile() ));
 //                BufferedWriter out =  new BufferedWriter(new FileWriter(output));
         ){
             String line = null;

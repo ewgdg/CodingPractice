@@ -1,4 +1,4 @@
-package Tree.SegmentTree;
+package tree.segmentTree;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

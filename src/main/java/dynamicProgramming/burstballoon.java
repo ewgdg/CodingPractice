@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package dynamicProgramming;
 
 public class burstballoon {
     //Input: [3,1,5,8]

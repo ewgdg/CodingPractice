@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 public class StockII {
     //Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).

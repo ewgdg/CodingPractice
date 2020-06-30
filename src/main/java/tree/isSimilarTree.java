@@ -1,6 +1,6 @@
-package Tree;
+package tree;
 public class isSimilarTree {
-    
+
     //给你两棵binary tree，tree的左右子树可以任意替换。如果第一个tree可以各种替换子树的左右子树，变成另外一个tree，就是similar。写个算法求是否similar. 用了recursive解出来
 
     public boolean solution(Node a, Node b){
@@ -23,7 +23,7 @@ public class isSimilarTree {
     // depth = log2(n)
     //branch factor = 4
     // total nodes = 4^(log2(n))  , let n = 4^log4(n) --> then total nodes = n^(log2(4)) = n^2 =T(n)
-    
+
     // follow up : reduce the constant factor a from 4 to 3.
 
 

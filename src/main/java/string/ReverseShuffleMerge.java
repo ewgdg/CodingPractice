@@ -1,7 +1,6 @@
-package String;
+package string;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class ReverseShuffleMerge {
     //find the lexicographically smallest A such that

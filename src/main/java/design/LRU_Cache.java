@@ -1,4 +1,4 @@
-package Design;
+package design;
 import java.util.HashMap;
 
 public class LRU_Cache {

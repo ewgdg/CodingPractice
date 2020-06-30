@@ -1,5 +1,4 @@
-package Design;
-import java.util.LinkedList;
+package design;
 import java.util.Queue;
 import java.util.Stack;
 

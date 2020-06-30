@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package dynamicProgramming;
 
 public class Guess_Number_Higher_or_Lower_II {
 //I pick a number from 1 to n. You have to guess which number I picked.

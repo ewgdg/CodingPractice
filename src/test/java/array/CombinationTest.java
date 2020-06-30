@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,5 +1,5 @@
 
-package String;
+package string;
 
 public class KMP {
 

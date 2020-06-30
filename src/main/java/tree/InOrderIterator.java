@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 public class InOrderIterator {
 
     //Morris traversal, Notice this will change the leaf node

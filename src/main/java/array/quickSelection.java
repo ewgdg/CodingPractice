@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 public class quickSelection {
     public static int findKthLargest(int[] nums, int k)  {

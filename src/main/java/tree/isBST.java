@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 public class isBST {
 
     public static boolean solution(Node root){

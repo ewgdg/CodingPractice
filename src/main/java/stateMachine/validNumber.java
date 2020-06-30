@@ -1,4 +1,4 @@
-package StateMachine;
+package stateMachine;
 public class validNumber {
     //Validate if a given string can be interpreted as a decimal number.
     //ambiguous so need to ask for clarification

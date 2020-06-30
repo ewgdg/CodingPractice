@@ -1,4 +1,4 @@
-package Tree.Trie;
+package tree.trie;
 
 import java.util.HashMap;
 

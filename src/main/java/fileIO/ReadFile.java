@@ -1,4 +1,4 @@
-package FileIO;
+package fileIO;
 
 import java.io.*;
 

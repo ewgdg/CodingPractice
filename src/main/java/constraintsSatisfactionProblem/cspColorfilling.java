@@ -1,6 +1,5 @@
-package ConstraintsSatisfactionProblem;
+package constraintsSatisfactionProblem;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class cspColorfilling {

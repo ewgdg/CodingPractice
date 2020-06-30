@@ -1,4 +1,4 @@
-package Design;
+package design;
 // import java.util.TreeMap;
 
 public class MedianFinderII {//<T extends Comparable<T>> if we want generic？？wrong!!!! the getmedian return l+r/2 , must be number so T entends Number & Compa

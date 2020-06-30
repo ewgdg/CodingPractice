@@ -1,4 +1,4 @@
-package Array;
+package array;
 // import org.slf4j.impl.StaticLoggerBinder;
 
 import java.util.*;
@@ -126,7 +126,7 @@ public class convertToReversedPolishNotation {
         while(!charSequence.isEmpty()){
             res.append(charSequence.removeFirst());
         }
-        
+
         return res.toString();
 
 

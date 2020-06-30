@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 public class BIT2D {
     int[][] nums;

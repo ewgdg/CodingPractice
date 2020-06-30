@@ -1,4 +1,4 @@
-package Array.Sort;
+package array.sorting;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

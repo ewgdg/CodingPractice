@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 public class CountUnivalSubTree {
     //a unival subtree is tree with all same vals
 

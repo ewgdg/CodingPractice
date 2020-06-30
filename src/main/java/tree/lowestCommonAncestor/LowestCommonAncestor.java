@@ -1,4 +1,4 @@
-package tree.LCA;
+package tree.lowestCommonAncestor;
 
 import java.util.LinkedList;
 import java.util.Queue;

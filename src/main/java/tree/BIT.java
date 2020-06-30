@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 public class BIT {// BinaryIndexTree
     int[] tree;

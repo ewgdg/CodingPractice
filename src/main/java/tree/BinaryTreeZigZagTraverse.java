@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 import java.util.Deque;
 import java.util.LinkedList;

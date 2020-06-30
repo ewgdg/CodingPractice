@@ -1,6 +1,6 @@
-package Design;
+package design;
 
-import Tree.BST;
+import tree.BST;
 
 public class MedianFinder {
     //simple way use 2 priority queue

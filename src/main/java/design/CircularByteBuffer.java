@@ -1,11 +1,8 @@
-package Design;
+package design;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
-
-import static java.lang.System.in;
-import static java.lang.System.out;
 
 public class CircularByteBuffer {
     //implement based on document from//https://ostermiller.org/utils/doc/com/Ostermiller/util/CircularByteBuffer.html

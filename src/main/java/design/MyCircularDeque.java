@@ -1,4 +1,4 @@
-package Design;
+package design;
 public class MyCircularDeque {
     //use circular buffer with rear and front pointer
     //another simple method is linkedlist

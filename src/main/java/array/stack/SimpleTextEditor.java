@@ -1,4 +1,4 @@
-package Array.Stack;
+package array.stack;
 
 public class SimpleTextEditor {
 }

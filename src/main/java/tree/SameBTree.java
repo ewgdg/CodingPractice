@@ -1,10 +1,10 @@
-package Tree;
+package tree;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-import Graph.Graph_simpler;
+import graph.Graph_simpler;
 
 public class SameBTree {
 

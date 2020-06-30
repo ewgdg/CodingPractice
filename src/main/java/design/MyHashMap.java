@@ -1,4 +1,4 @@
-package Design;
+package design;
 public class MyHashMap {
 
     //if resize we need to change hashcode so we might want to use consistent hashing

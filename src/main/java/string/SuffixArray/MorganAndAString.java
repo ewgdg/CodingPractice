@@ -1,4 +1,4 @@
-package String.SuffixArray;
+package string.SuffixArray;
 
 import java.util.Arrays;
 

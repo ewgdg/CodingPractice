@@ -1,4 +1,4 @@
-package Math;
+package math;
 
 public class CountPrime {
 //    Count the number of prime numbers less than a non-negative number, n.

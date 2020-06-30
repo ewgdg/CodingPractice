@@ -1,4 +1,4 @@
-package Design;
+package design;
 //Excel(3,"C");
 //// construct a 3*3 2D array with all zero.
 ////   A B C

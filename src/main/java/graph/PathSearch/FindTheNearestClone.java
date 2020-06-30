@@ -1,4 +1,4 @@
-package Graph.PathSearch;
+package graph.PathSearch;
 
 import java.util.*;
 

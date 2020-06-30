@@ -1,4 +1,4 @@
-package Array;
+package array;
 public class median2array {
     //2 sorted array
     public static int solution(int[] a, int[] b){

@@ -1,4 +1,4 @@
-package Array.Stack;
+package array.stack;
 //Alexa has two stacks of non-negative integers, stack  and stack  where index denotes the top of the stack. Alexa challenges Nick to play the following game:
 //
 //In each move, Nick can remove one integer from the top of either stack  or stack .

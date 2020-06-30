@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package dynamicProgramming;
 
 import java.util.HashMap;
 
@@ -116,7 +116,7 @@ public class Abbreviation {
      * res = helper( i+1, j+1 ) ==> dp[i][j] = dp[i+1][j+1] or if we let i represent
      * the end index instead of the start index of a substring then dp[i][j]=
      * dp[i-1][j-1]
-     * 
+     *
      */
     static String abbreviation(String a, String b) {
         // abc

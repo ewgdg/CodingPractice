@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 public class BST<T extends Comparable<T>> {
     public class Node {

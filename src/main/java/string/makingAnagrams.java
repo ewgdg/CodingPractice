@@ -1,5 +1,5 @@
 
-package String;
+package string;
 import java.util.HashMap;
 
 public class makingAnagrams {

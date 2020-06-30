@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class TakeBetween {
     public static String takeBetween(String input, String left, String right, Boolean takeUntilEndIfRightMissing)
@@ -94,7 +94,7 @@ public class TakeBetween {
         TestTakeBetween("Simple Case", "<p>Simple case</p>", "<p>", "</p>", false, "Simple case");
         TestTakeBetween("Flipped And False", "</p>Flipped<p>End", "<p>", "</p>", false, null);
         TestTakeBetween("Flipped And True", "</p>Flipped<p>End", "<p>", "</p>", true, "End");
-        TestTakeBetween("Not String Ends", "Not<p>String</p>Ends", "<p>", "</p>", false, "String");
+        TestTakeBetween("Not String Ends", "Not<p>String</p>Ends", "<p>", "</p>", false, "string");
         TestTakeBetween("Matching", "Both<p>Ends<p>Match", "<p>", "<p>", false, "Ends");
         TestTakeBetween("No Left And False", "No Right</p>", "<p>", "</p>", false, null);
         TestTakeBetween("No Left And True", "No Right</p>", "<p>", "</p>", true, null);

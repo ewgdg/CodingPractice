@@ -1,4 +1,4 @@
-package Tree.SegmentTree;
+package tree.segmentTree;
 
 import java.util.Arrays;
 
