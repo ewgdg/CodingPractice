@@ -1,4 +1,4 @@
-package Tree.LCA;
+package tree.LCA;
 
 import java.util.Map;
 

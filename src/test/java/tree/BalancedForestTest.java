@@ -10,7 +10,7 @@ import java.util.Scanner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import Tree.BalancedForest_linear;
+import tree.BalancedForest_linear;
 
 public class BalancedForestTest {
     BalancedForest_linear solver;
