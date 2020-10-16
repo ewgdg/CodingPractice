@@ -47,12 +47,12 @@ public class PostOrderIterator {
     public static void postOrder(Node root) {
         Node cur = root;
         Stack<Node> stack = new Stack<>();
-        Stack<Node> right = new Stack<>();//indicate do we print right child
-        boolean first =true;
+        Stack<Node> right = new Stack<>();//indicate whether we explore right child
+        // boolean first =true;
         while(!stack.isEmpty()||cur!=null){
             while(cur!=null){
                 stack.add(cur);
-                right.add(cur.right);
+                if(cur.right!=null) right.add(cur.right);//????need to check if right is null first, seems doesn't matter to the result
                 cur=cur.left;
 
             }
@@ -61,12 +61,12 @@ public class PostOrderIterator {
                 cur=right.pop();
             }else{
                 stack.pop();
-                if(!first){
-                    System.out.print(" ");
+                // if(!first){
+                //     System.out.print(" ");
 
-                }else{
-                    first=false;
-                }
+                // }else{
+                //     first=false;
+                // }
                 System.out.print(cur);
                 cur = null;
             }

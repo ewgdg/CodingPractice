@@ -72,6 +72,7 @@ public class FindTheNearestClone {
         return -1;
 
     }
+    // a state tells a node with 
     static class State{
         int src;
         int cost;

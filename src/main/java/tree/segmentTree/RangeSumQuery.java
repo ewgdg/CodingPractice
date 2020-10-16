@@ -37,10 +37,13 @@ public class RangeSumQuery {
     int[] lazy;
     int[] nums;
 
+    //https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/
     public RangeSumQuery(int[] nums){
         n  =nums.length;
 
-        int nextPowerOf2 = Integer.highestOneBit(n-1)<<2;
+        //int nextPowerOf2 = Integer.highestOneBit(n-1)<<2;//wrong, if n==1 then nexPowerOf2 =0;
+
+        int nextPowerOf2 = Integer.bitCount(n)==1? n*2 : Integer.highestOneBit(n)<<2; //or simply 4*n
 
         tree = new Integer[nextPowerOf2];
         lazy = new int[nextPowerOf2];
@@ -50,6 +53,7 @@ public class RangeSumQuery {
         construct(nums,0,n-1,0);
     }
 
+    //O n
     public void construct(int[] nums, int lo, int hi, int root){
         //terminating
         if(lo==hi){
@@ -58,7 +62,7 @@ public class RangeSumQuery {
         }
 
         int mid = lo+ (hi-lo)/2;
-        int left  = root*2+1;
+        int left  = root*2+1; //or (root<<1)+1 //for shift op , bracket is necessary for prio issue
         int right = root*2+2;
         construct(nums, lo, mid,  left   );
         construct(nums, mid+1, hi, right);
@@ -80,7 +84,8 @@ public class RangeSumQuery {
         int left =root*2+1;
         int right = root*2+2;
         if(lazy[root]!=0){
-            tree[root]+=lazy[root];
+            // tree[root]+=lazy[root]; //wrong, the update should be involved with the current range
+            tree[root] += (hi - lo + 1) * lazy[root];
             if(hi!=lo) {
                 lazy[left] += lazy[root];
                 lazy[right] += lazy[root];
@@ -93,9 +98,9 @@ public class RangeSumQuery {
         if(j<lo|| i>hi){
             return;
         }
-        //total overlap
+        //total overlap //// segment is fully within update range
         if( i<=lo && j>=hi){
-            tree[root]+=delta;
+            tree[root]+=(hi - lo + 1) * delta;
 
             if(lo!=hi){
                 lazy[left]+=delta;
@@ -124,7 +129,7 @@ public class RangeSumQuery {
         int left= root*2+1;
         int right = root*2+2;
         if(lazy[root]!=0){
-            tree[root]+=lazy[root];
+            tree[root]+=(hi - lo + 1) * lazy[root];
             if(lo!=hi){
                 lazy[left]+=lazy[root];
                 lazy[right]+=lazy[root];

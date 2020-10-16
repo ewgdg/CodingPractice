@@ -1,6 +1,6 @@
  //T(n) = 4*T(n/2) + 1
     //master theorem   aT(n/b) + f(n)  if dominating factor is n^(logb(a))  >> f(n)  then complexity T(n) = n^c where c = logb(a)
-    //if f(n) =   (log(n))^k  *  n^c then T(n) = (log(n))^k+1 * n^c
+    //if f(n) =   (log(n))^k  *  n^c then T(n) = (log(n))^k+1 * n^c  where c = logb(a)
     //else if af(n/b) <<< kf(n)   &&   f(n) >>> n^c  then T = f(n)
 
     // depth = log2(n)

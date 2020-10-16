@@ -57,8 +57,12 @@ public class RMQ_SegmentTree {
 
     //helper
     public Integer rangeMinQuery(int i, int j, int lo, int hi, int root){
+        //[i,j] is target range
+        //[lo,hi] is current range
+
         //lo,hi is the segment bound for cur node
         //total overlap/covered
+        //[i,j] totally covers [lo,hi]
         if( i<=lo && j>=hi  ){
             return tree[root];
         }
@@ -124,6 +128,7 @@ public class RMQ_SegmentTree {
 
 
     //below is the implementation with Lazy propagation
+    //lazy prop is for the purpose of optimizing range update(update a range of elements), not single item update
     Integer[] lazy;
     public void updateLazy(int i,int j, int delta){
         if(i>j) return;

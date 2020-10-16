@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - PostOrderIterator",
+      "request": "launch",
+      "mainClass": "tree.PostOrderIterator",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - MonotoneQueue",
       "request": "launch",
       "mainClass": "Array.MonotoneQueue",

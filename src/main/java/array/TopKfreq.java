@@ -3,8 +3,9 @@ package array;
 import java.util.*;
 
 public class TopKfreq {
-    //min heap maintain k top elem so far, nlogk
-    //quick selection O n
+    //min heap maintain k top elem so far, nlogk //https://www.geeksforgeeks.org/binary-heap/
+
+    //quick select O n
 
 
     public List<Integer> solve(int[] nums,int k){
@@ -15,7 +16,7 @@ public class TopKfreq {
         }
 
         List<Node> list = new ArrayList<>(counter.values());
-        quickSelection(list,k,0,list.size()-1);
+        quickSelect(list,k,0,list.size()-1);
 
         List<Integer> res =new ArrayList<>();
         for(int i=0;i<k;i++){
@@ -24,7 +25,7 @@ public class TopKfreq {
         return res;
     }
 
-    public void quickSelection(List<Node> list, int k, int lo, int hi){
+    public void quickSelect(List<Node> list, int k, int lo, int hi){
 
 
 //recursive method
@@ -53,7 +54,20 @@ public class TopKfreq {
     }
     public int partition(List<Node> list, int lo, int hi){
         Random random = new Random();
-        int pivotIndex = random.nextInt((hi-lo)+1)+lo;
+        int pivotIndex = hi-lo==0?lo:random.nextInt((hi-lo))+lo;
+        /**
+         * Generates a random integer inside the lo and hi interval
+         * @param lo
+         * @param hi
+         * @return the generated int
+         */
+        //public static int randomInteger(int lo, int hi) {
+        //     java.util.Random rn = new java.util.Random();
+        //     int n = hi - lo + 1;
+        //     int i = rn.nextInt() % n;
+        //     if (i < 0) i = -i;
+        //     return lo + i;
+        //   }
 
         swap(list,lo,pivotIndex);
 
