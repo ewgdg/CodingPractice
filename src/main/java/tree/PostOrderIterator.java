@@ -1,5 +1,7 @@
 package tree;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.Stack;
 
 public class PostOrderIterator {
@@ -75,6 +77,39 @@ public class PostOrderIterator {
         }
 
     }
+
+    //we can actually use a tovisit set to record whether or not we explored the node.   
+    public static void postOrder2(Node root) {
+        Node cur = root;
+        Stack<Node> stack = new Stack<>();
+        Set<Node> tovisit = new HashSet<>();//indicate whether we explore right child
+
+        while(!stack.isEmpty()||cur!=null){
+            while(cur!=null){
+                stack.add(cur);
+                // tovisit.add(cur);
+                if(cur.right!=null) tovisit.add(cur.right);
+                cur=cur.left;
+
+            }
+            cur=  stack.peek();
+            if(!tovisit.isEmpty() && tovisit.contains(cur.right) ){
+                cur=cur.right;
+            }else{
+                stack.pop();
+                tovisit.remove(cur);
+                
+                System.out.print(cur);
+                cur = null;
+            }
+
+
+        }
+
+    }
+
+
+
     public static void main(String[] args){
         PostOrderIterator iterator = new PostOrderIterator(Node.tree);
 

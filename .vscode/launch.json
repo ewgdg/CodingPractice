@@ -6,6 +6,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - UnitTest",
+      "request": "launch",
+      "mainClass": "design.shapes.UnitTest",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Rectangle",
+      "request": "launch",
+      "mainClass": "design.shapes.Rectangle",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SuffixArrayBuilder",
+      "request": "launch",
+      "mainClass": "string.SuffixArray.SuffixArrayBuilder",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CircularByteBuffer",
+      "request": "launch",
+      "mainClass": "design.CircularByteBuffer",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StreamCompressor",
+      "request": "launch",
+      "mainClass": "online.StreamCompressor",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MedianFinderII",
+      "request": "launch",
+      "mainClass": "design.MedianFinderII",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MultiSet",
+      "request": "launch",
+      "mainClass": "design.MultiSet",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TopologicalSort",
+      "request": "launch",
+      "mainClass": "graph.TopologicalSort",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - subsequenceSum1",
+      "request": "launch",
+      "mainClass": "dynamicProgramming.subsequenceSum1",
+      "projectName": "CodingPractice"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - PostOrderIterator",
       "request": "launch",
       "mainClass": "tree.PostOrderIterator",

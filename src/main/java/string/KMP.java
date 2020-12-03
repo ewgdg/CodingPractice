@@ -4,7 +4,9 @@ package string;
 public class KMP {
 
 
-    public static int[] getTransition(String pattern){
+    public static int[] getTable(String pattern){
+        //"partial match" table T
+        // T[i] is the amount of "backtracking" we need to do after a mismatch
         int n  = pattern.length();
         int[] res = new int[n];
 
@@ -29,7 +31,7 @@ public class KMP {
 
 
     public static boolean contains(String parent, String pattern){
-        int[] transition = getTransition(pattern);
+        int[] transition = getTable(pattern);
 
         int i =0;
         int j =0;

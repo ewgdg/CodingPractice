@@ -35,11 +35,31 @@ public class DisjointSet {
         if(!map.containsKey(data)) return -1;
         return findParent(map.get(data)).data;
     }
-    public Node findParent(Node node){//should name it find , it find which group it belongs to
+    public Node findParent(Node node){//should name it find!!! , it find which group/root it belongs to
         if(node.parent!=node){
-            node.parent = findParent(node.parent);
+            node.parent = findParent(node.parent); //path compression
         }
         return node.parent;
+
+    }
+    public Node findIterative(Node node){
+        //iterative path compression
+        //get root
+        Node cur = node;
+        while(cur.parent!=cur){
+            cur= cur.parent;
+        }
+        Node root =cur;
+        cur=node;
+        //path compression
+        while(cur!=root){
+            Node next=cur.parent;
+            cur.parent=root;
+            cur=next;
+        }
+        return root;
+
+
     }
 
     public boolean union(int a, int b){
@@ -52,6 +72,7 @@ public class DisjointSet {
         if(p1==p2) return false;//if same set dont join
 
         count--;
+        //smaller rank indicates shorter path to root
         if(p1.rank>= p2.rank){
             if(p1.rank==p2.rank){
                 p1.rank++;
@@ -94,3 +115,68 @@ public class DisjointSet {
 
 
 }
+
+//another similar implenmentation without Node struct, less readable
+// Union Find, call union for every edge, return count().
+// O(n + edges.length) time because Union Find constructor costs O(n) time, and we call union() exactly once for every edge where one union() call costs O(1) time (in theory its very very slightly above O(1)).
+// O(n) space because of Union Find.
+// public int countComponents(int n, int[][] edges) { 
+//     UnionFind uf = new UnionFind(n); 
+//     for (int[] edge : edges) {
+//         uf.union(edge[0], edge[1]);
+//     }
+//     return uf.count();
+// }
+
+
+// private class UnionFind {
+//     private int[] parents;     
+//     private int[] weight;
+//     private int count;
+    
+//     public UnionFind(int n) {
+//         parents = new int[n];
+//         weight = new int[n];
+//         count = n;
+//         for (int i = 0; i < parents.length; ++i) {
+//             parents[i] = i;
+//             weight[i] = 0;
+//         }
+//     }
+    
+//     public void union(int p, int q) {
+//         int pRoot = find(p);
+//         int qRoot = find(q);
+//         if (pRoot == qRoot) return;     // p and q already belong to the same set.
+        
+//         // Weighted union: make the less deeper tree a subtree of the deeper tree.
+//         if (weight[pRoot] < weight[qRoot]) {
+//             parents[pRoot] = qRoot;
+//         } else if (weight[pRoot] > weight[qRoot]) {
+//             parents[qRoot] = pRoot;
+//         } else {
+//             parents[qRoot] = pRoot;
+//             weight[pRoot]++;        
+//         }
+//         count--;    
+//     }
+    
+//     public int find(int p) {
+//         int pRoot = p;
+//         while (pRoot != parents[pRoot]) {
+//             pRoot = parents[pRoot];
+//         }
+        
+//         // Path compression: make each node on the path from p to its root point to the root.
+//         while (p != parents[p]) {
+//             int temp = parents[p];
+//             parents[p] = pRoot;
+//             p = temp;
+//         }
+//         return pRoot;
+//     }
+    
+//     public int count() {
+//         return count;
+//     }
+// }

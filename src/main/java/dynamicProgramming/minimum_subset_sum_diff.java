@@ -2,8 +2,12 @@ package dynamicProgramming;
 
 import java.util.HashMap;
 
+// Given a set of integers, the task is to divide it into two sets S1 and S2 such that the absolute difference between their sums is minimum. 
+// If there is a set S with n elements, then if we assume Subset1 has m elements, 
+// Subset2 must have n-m elements and the value of abs(sum(Subset1) – sum(Subset2)) should be minimum.
 public class minimum_subset_sum_diff {
 
+    // Time Complexity = O(n*sum) where n is the number of elements and sum is sum of all elements.
     public static int solution(int[] nums){
         int total = 0;
         for(int num: nums){

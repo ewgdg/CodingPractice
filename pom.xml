@@ -207,6 +207,17 @@
             <version>${coveralls-maven-plugin.version}</version>
           </plugin>
         </plugins>
+        <resources>
+          <resource>
+            <directory>src/main/java/design/shapes</directory>
+            <excludes>
+             
+         
+              <exclude>Shape.java</exclude>
+            </excludes>
+          </resource>
+ 
+        </resources>
       </build>
     </profile>
   </profiles>

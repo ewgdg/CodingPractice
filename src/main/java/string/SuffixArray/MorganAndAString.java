@@ -13,7 +13,7 @@ public class MorganAndAString {
     //use suffix array  -O nlogn or O n
 
 
-    private static void compute(String first, String second){
+    public static void compute(String first, String second){
 
         StringBuilder result = new StringBuilder();
         String process = first.concat("z").concat(second).concat("z"); //append y or z means if it terminate then it should be the larger one, z >> Z, $ do the opposite behaviour

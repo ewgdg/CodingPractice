@@ -6,7 +6,44 @@ import java.util.List;
 // import org.slf4j.impl.StaticLoggerBinder;
 
 public class subsequenceSum  {
+    
+    //naive solution
+    class NaiveSolver{
+        public List<List<Integer>> solve(int[] arr,int n, int k){
+            
+            List<List<Integer>> res = new ArrayList<>();
+            recursionHelper(arr,n,k,0,0,new ArrayList<>(),res);
+            return res;
+        }
 
+        void recursionHelper(int[] arr, int n, int k, int i, int accumulatedSum, List<Integer> subsequence,List<List<Integer>> res){
+            //terminating condition
+            if(accumulatedSum == k){
+                List<Integer> clone = new ArrayList<>(subsequence);
+                res.add(clone);
+            }
+
+            if(i>=n) return;
+            
+
+            //current element is arr[i]
+            int cur = arr[i];
+
+            //branch 1: skip current elem
+            recursionHelper(arr, n, k, i+1, accumulatedSum,subsequence,res);
+
+            //branch 2: include current elem into current subsequence
+            subsequence.add(cur);
+            recursionHelper(arr,n,k,i+1,accumulatedSum + cur, subsequence,res);
+            //reverse modification before return
+            subsequence.remove(subsequence.size()-1);
+
+            return;
+
+        }
+    
+    }
+    
 
     public static List<List<Integer>> solution(int[] nums, int target){
         HashMap<String,List<List<Integer>>> mem = new HashMap<>();
@@ -32,6 +69,7 @@ public class subsequenceSum  {
         if(mem.containsKey(key)) return mem.get(key);
 
 
+        //we can use pass down subsequnce pattern instead of return res back pattern
         List<List<Integer>> res = new ArrayList<>();
 
         if(target<0) return res;
@@ -51,7 +89,7 @@ public class subsequenceSum  {
 
 
         for(List<Integer> list  : ans2  ){
-            List<Integer> clone = new ArrayList<>(list); //need a new array res to put into mem
+            List<Integer> clone = new ArrayList<>(list); //need a new array res to put into mem,?? seems not
             clone.add(nums[index]);//ans2 include cur num
             res.add(clone);
         }

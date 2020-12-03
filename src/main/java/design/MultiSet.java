@@ -3,8 +3,9 @@ package design;
 import java.util.TreeMap;
 // import java.util.TreeSet;
 
-public class MultiSet<K extends Comparable<K>> { // or named as bag // another way for compare is to cast K into Comparable<? super K>
-
+public class MultiSet<K extends Comparable<? super K>> { // or named as bag // another way for compare is to cast K into Comparable<? super K>
+    //treemap implementaion does not check if type is comparable
+    //it simply cast K into comparable or use the given comparator
     TreeMap<K,DLL<K>> map;
     public MultiSet(){
         map = new TreeMap<>();
@@ -73,6 +74,8 @@ public class MultiSet<K extends Comparable<K>> { // or named as bag // another w
 
 
     class DLL<T>{//no need to use generic T for a inner class , just use K ==> class DLL{ K data }
+
+       
         Node<T> head;
         Node<T> tail;
 
@@ -84,7 +87,7 @@ public class MultiSet<K extends Comparable<K>> { // or named as bag // another w
         }
 
         public void addLast(T data){
-            Node<T> node = new Node<T>(data);
+            Node<T> node = new Node<>(data);
             tail.prev.next=  node;
             node.prev =tail.prev;
 
@@ -120,10 +123,10 @@ public class MultiSet<K extends Comparable<K>> { // or named as bag // another w
         }
 
     }
-    public class Node<T>{ //or simply Node and use K from parent
-        Node<T> prev,next;
-        T data;
-        public Node(T val){
+    public static class Node<K>{ //or simply Node and use K from parent
+        Node<K> prev,next;
+        K data;
+        public Node(K val){
             data= val;
         }
     }
@@ -141,7 +144,11 @@ public class MultiSet<K extends Comparable<K>> { // or named as bag // another w
 //        set.add(1);
 //        System.out.println(set.contains(1)); //doesnt work
 
-
+        MultiSet<Integer> bag= new MultiSet<>();
+        bag.add(1);
+        bag.add(2);
+        System.out.println(bag.contains(1));
+        System.out.println(bag.contains(3));
 
     }
 

@@ -87,7 +87,7 @@ public class TopologicalSort {
 
 
         TopologicalSort solver = new TopologicalSort();
-        System.out.println(solver.sort_dfs(graph));
+        System.out.println(solver.sort_dfs(graph));//this is in stack so reverse it first
         System.out.println(solver.sort_bfs(graph));
 
     }

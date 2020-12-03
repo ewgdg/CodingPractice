@@ -1,7 +1,10 @@
 package design;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CircularByteBuffer {
@@ -20,6 +23,7 @@ public class CircularByteBuffer {
         endIdx=0;
         inputStream = new _InputStream();//or we can make it a singleton?
         outputStream = new _OutputStream();
+        buffer= new ArrayList<>(Collections.nCopies(this.capacity, null));
 
     }
 
@@ -59,11 +63,13 @@ public class CircularByteBuffer {
                 throw new IOException("out of space.");
             }
 
+            //might be wrong implementation bc this should write only one byte
             buffer.set(endIdx,(byte)((b>>24)&0xFF));
             buffer.set(endIdx+1,(byte)((b>>16)&0xFF));
             buffer.set(endIdx+2,(byte)((b>>8)&0xFF));
             buffer.set(endIdx+3,(byte)((b)&0xFF));
             endIdx=increaseIdx(endIdx,4);
+            // System.out.println(getAvailable());
         }
     }
 
@@ -81,8 +87,13 @@ public class CircularByteBuffer {
 
         @Override
         public synchronized int read() throws IOException {//need to lock access of buffer to prevent race cond
-            if(getAvailable()<4) throw new IOException("no enough data");
+            // System.out.println(getAvailable());
+            if(getAvailable()<4){
+                // throw new IOException("no enough data");
+                return -1;
 
+            }
+            //might be wrong implementation bc this should read only one byte
             int res = buffer.get(startIdx+3) & 0xFF |
                     (buffer.get(startIdx+2) & 0xFF) << 8 |
                     (buffer.get(startIdx+1) & 0xFF) << 16 |
