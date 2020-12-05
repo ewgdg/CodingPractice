@@ -448,7 +448,7 @@ class UnitTest {
 
   final static double MAX_VALUE = Shape.MAX_VALUE / 10;
   final static double MIN_VALUE = Shape.MIN_VALUE / 10;
-  final static double epsilon = Float.MIN_VALUE;
+  final static double epsilon = Float.MIN_VALUE; //this value is positive
 
   // utils to create a randomly generated Rectangle
   public Rectangle getRandomRect() {
@@ -464,6 +464,7 @@ class UnitTest {
 
   // utils to genreate a point within a given rect
   public Vector2D getRandomPointWithinRect(Rectangle rect) {
+    //todo : have seed for randomness
     double xcen = rect.getCenter().x;
     double ycen = rect.getCenter().y;
     double w = rect.getWidth();
